@@ -14,10 +14,12 @@ enum ListBarsAndPubs {
   
     enum List {
         struct Response {
+            let barsAndPubs: [BarOrPub]
         }
         struct ViewModel {
             struct DisplayedBarOrPub {
-                
+                let name: String
+                let thumb: String
             }
             
             let displayedBarsOrPubs: [DisplayedBarOrPub]

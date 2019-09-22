@@ -15,8 +15,8 @@ class ListBarsAndPubsWorker {
         self.listBarsAndPubsStore = listBarsAndPubsStore
     }
     
-    func fetchBarsAndPubs(category: Categories = .barsAndPubs, sort: SortBy = .rating, order: SortOrder = .desc, completionHandler:@escaping (() throws -> SearchBarsAndPubsResponse) -> Void) {
-        listBarsAndPubsStore.fetchBarsAndPubs(category: category, sort: sort, order: order) { (searchBarsAndPubsResponse: () throws -> SearchBarsAndPubsResponse) -> Void in
+    func fetchBarsAndPubs(category: Categories = .barsAndPubs, sort: SortBy = .rating, order: SortOrder = .desc, count: Int = 15, startAt: Int, completionHandler:@escaping (() throws -> SearchBarsAndPubsResponse) -> Void) {
+        listBarsAndPubsStore.fetchBarsAndPubs(category: category, sort: sort, order: order, count: count, startAt: startAt) { (searchBarsAndPubsResponse: () throws -> SearchBarsAndPubsResponse) -> Void in
             do {
                 let searchBarsAndPubsResponse = try searchBarsAndPubsResponse()
                 DispatchQueue.main.async {
@@ -31,24 +31,11 @@ class ListBarsAndPubsWorker {
     }
 }
 
-enum Categories: String {
-    case barsAndPubs = "11"
-}
-
-enum SortBy: String {
-    case rating = "rating"
-}
-
-enum SortOrder: String {
-    case desc = "desc"
-    case asc = "asc"
-}
-
 protocol ListBarsAndPubsStoreProtocol {
     
     // MARK: CRUD operations - Inner closure
     
-    func fetchBarsAndPubs(category: Categories, sort: SortBy, order: SortOrder, completionHandler: @escaping (() throws -> SearchBarsAndPubsResponse) -> Void)
+    func fetchBarsAndPubs(category: Categories, sort: SortBy, order: SortOrder, count: Int, startAt: Int, completionHandler: @escaping (() throws -> SearchBarsAndPubsResponse) -> Void)
 }
 
 // MARK: - Orders store CRUD operation errors

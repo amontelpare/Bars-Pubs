@@ -18,7 +18,13 @@ class ListBarsAndPubsPresenter: ListBarsAndPubsPresentationLogic {
     // MARK: List bars and pubs
   
     func presentBarsAndPubs(response: ListBarsAndPubs.List.Response) {
-        let viewModel = ListBarsAndPubs.List.ViewModel(displayedBarsOrPubs: [])
+        var displayedBarsOrPubs = [ListBarsAndPubs.List.ViewModel.DisplayedBarOrPub]()
+        for a in response.barsAndPubs {
+            let barOrPub = ListBarsAndPubs.List.ViewModel.DisplayedBarOrPub(name: a.name, thumb: a.thumb)
+            displayedBarsOrPubs.append(barOrPub)
+        }
+        
+        let viewModel = ListBarsAndPubs.List.ViewModel(displayedBarsOrPubs: displayedBarsOrPubs)
         viewController?.displayBarsAndPubs(viewModel: viewModel)
     }
 }

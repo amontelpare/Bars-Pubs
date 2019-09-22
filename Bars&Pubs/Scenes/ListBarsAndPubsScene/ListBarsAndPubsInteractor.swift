@@ -19,17 +19,23 @@ protocol ListBarsAndPubsDataStore {
 class ListBarsAndPubsInteractor: ListBarsAndPubsBusinessLogic, ListBarsAndPubsDataStore {
     var presenter: ListBarsAndPubsPresentationLogic?
     var worker: ListBarsAndPubsWorker?
-    //var name: String = ""
+    var startIndexForService: Int = 0
   
     // MARK: List bars and pubs
   
     func listBarsAndPubs() {
+        guard worker == nil else { return }
         worker = ListBarsAndPubsWorker()
-        worker?.fetchBarsAndPubs(completionHandler: { (barsAndPubs) in
-            
+        worker?.fetchBarsAndPubs(startAt: startIndexForService, completionHandler: { (searchBarsAndPubsResponse) in
+            do {
+                let searchBarsAndPubsResponse = try searchBarsAndPubsResponse()
+                let response = ListBarsAndPubs.List.Response(barsAndPubs: searchBarsAndPubsResponse.barsAndPubs)
+                self.presenter?.presentBarsAndPubs(response: response)
+                self.startIndexForService += searchBarsAndPubsResponse.barsAndPubs.count
+            } catch let error {
+                
+            }
+            self.worker = nil
         })
-    
-        let response = ListBarsAndPubs.List.Response()
-        presenter?.presentBarsAndPubs(response: response)
     }
 }

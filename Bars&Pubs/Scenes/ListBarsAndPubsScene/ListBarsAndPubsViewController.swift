@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import PaginatedTableView
 
 protocol ListBarsAndPubsDisplayLogic: class {
     func displayBarsAndPubs(viewModel: ListBarsAndPubs.List.ViewModel)
@@ -64,7 +63,7 @@ class ListBarsAndPubsViewController: UIViewController, ListBarsAndPubsDisplayLog
   
     // MARK: List bars and pubs
   
-    @IBOutlet weak var tableView: PaginatedTableView!
+    @IBOutlet weak var tableView: UITableView!
     var displayedBarsOrPubs = [ListBarsAndPubs.List.ViewModel.DisplayedBarOrPub]()
     
     func listBarsAndPubs() {
@@ -72,7 +71,32 @@ class ListBarsAndPubsViewController: UIViewController, ListBarsAndPubsDisplayLog
     }
   
     func displayBarsAndPubs(viewModel: ListBarsAndPubs.List.ViewModel) {
-        displayedBarsOrPubs = viewModel.displayedBarsOrPubs
-        tableView?.reloadData()
+        displayedBarsOrPubs += viewModel.displayedBarsOrPubs
+        self.tableView.reloadData()
     }
 }
+
+extension ListBarsAndPubsViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return displayedBarsOrPubs.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListBarsAndPubsCell", for: indexPath) as! ListBarsAndPubsCell
+        let displayedBarOrPub = displayedBarsOrPubs[indexPath.row]
+        cell.name.text = displayedBarOrPub.name
+        cell.thumbImageView?.setImageView(urlString: displayedBarOrPub.thumb)
+        
+        return cell
+    }
+}
+
+extension ListBarsAndPubsViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if (indexPath.row == displayedBarsOrPubs.count - 1) {
+            listBarsAndPubs()
+        }
+    }
+}
+
