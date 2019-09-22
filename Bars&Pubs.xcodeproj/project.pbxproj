@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26AE72C85522F340BC39B944 /* Pods_Bars_PubsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8872A374BA178B7BD2790CD /* Pods_Bars_PubsTests.framework */; };
+		8E0BC83D2336D4DF00131080 /* ManagedBarOrPub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BC83C2336D4DF00131080 /* ManagedBarOrPub.swift */; };
+		8E0BC83F2336D4FF00131080 /* ManagedBarOrPub+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BC83E2336D4FF00131080 /* ManagedBarOrPub+Properties.swift */; };
+		8E0BC8412336D6BA00131080 /* ListBarsAndPubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BC8402336D6BA00131080 /* ListBarsAndPubsViewController.swift */; };
+		8E0BC8432336D6C600131080 /* ListBarsAndPubsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BC8422336D6C600131080 /* ListBarsAndPubsInteractor.swift */; };
+		8E0BC8452336D6D100131080 /* ListBarsAndPubsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BC8442336D6D100131080 /* ListBarsAndPubsWorker.swift */; };
+		8E0BC8472336D6DA00131080 /* ListBarsAndPubsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BC8462336D6DA00131080 /* ListBarsAndPubsRouter.swift */; };
+		8E0BC8492336D6E000131080 /* ListBarsAndPubsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BC8482336D6E000131080 /* ListBarsAndPubsModels.swift */; };
+		8E0BC84C2336EB0900131080 /* SearchBarsAndPubsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BC84B2336EB0900131080 /* SearchBarsAndPubsResponse.swift */; };
+		8E5DC8562337F52500BC175B /* ListBarsAndPubsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC8552337F52500BC175B /* ListBarsAndPubsCell.swift */; };
+		8E5DC85A2338109200BC175B /* UIImageView+Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC8592338109200BC175B /* UIImageView+Downloader.swift */; };
 		8EF890A22336BA590016013B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF890A12336BA590016013B /* AppDelegate.swift */; };
-		8EF890A42336BA590016013B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF890A32336BA590016013B /* ViewController.swift */; };
 		8EF890A72336BA590016013B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF890A52336BA590016013B /* Main.storyboard */; };
 		8EF890AA2336BA590016013B /* Bars_Pubs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EF890A82336BA590016013B /* Bars_Pubs.xcdatamodeld */; };
 		8EF890AC2336BA5A0016013B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF890AB2336BA5A0016013B /* Assets.xcassets */; };
 		8EF890AF2336BA5A0016013B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF890AD2336BA5A0016013B /* LaunchScreen.storyboard */; };
 		8EF890BA2336BA5A0016013B /* Bars_PubsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF890B92336BA5A0016013B /* Bars_PubsTests.swift */; };
+		8EF890CC2336BB9A0016013B /* ListBarsAndPubsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF890C62336BB9A0016013B /* ListBarsAndPubsPresenter.swift */; };
+		8EF890D52336BC420016013B /* BarsAndPubsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF890D42336BC420016013B /* BarsAndPubsWorker.swift */; };
+		8EF890D72336BDC90016013B /* BarOrPub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF890D62336BDC90016013B /* BarOrPub.swift */; };
+		8EF890DA2336C1270016013B /* BarsAndPubsAPIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF890D92336C1270016013B /* BarsAndPubsAPIStore.swift */; };
+		8EF890DC2336C14A0016013B /* BarsAndPubsCoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF890DB2336C14A0016013B /* BarsAndPubsCoreDataStore.swift */; };
+		EEDBE9F3F2297B4E7B2F6F8B /* Pods_Bars_Pubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6F79E72FFD94985F602A62 /* Pods_Bars_Pubs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +43,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D6BA7B39B6E5B21062ACEBC /* Pods-Bars&Pubs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bars&Pubs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bars&Pubs/Pods-Bars&Pubs.debug.xcconfig"; sourceTree = "<group>"; };
+		22725789067FC10984EAAE63 /* Pods-Bars&PubsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bars&PubsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bars&PubsTests/Pods-Bars&PubsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3686A053F1DD12A38C10D847 /* Pods-Bars&Pubs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bars&Pubs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bars&Pubs/Pods-Bars&Pubs.release.xcconfig"; sourceTree = "<group>"; };
+		3D6F79E72FFD94985F602A62 /* Pods_Bars_Pubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bars_Pubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0BC83C2336D4DF00131080 /* ManagedBarOrPub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedBarOrPub.swift; sourceTree = "<group>"; };
+		8E0BC83E2336D4FF00131080 /* ManagedBarOrPub+Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedBarOrPub+Properties.swift"; sourceTree = "<group>"; };
+		8E0BC8402336D6BA00131080 /* ListBarsAndPubsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsViewController.swift; sourceTree = "<group>"; };
+		8E0BC8422336D6C600131080 /* ListBarsAndPubsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsInteractor.swift; sourceTree = "<group>"; };
+		8E0BC8442336D6D100131080 /* ListBarsAndPubsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsWorker.swift; sourceTree = "<group>"; };
+		8E0BC8462336D6DA00131080 /* ListBarsAndPubsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsRouter.swift; sourceTree = "<group>"; };
+		8E0BC8482336D6E000131080 /* ListBarsAndPubsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsModels.swift; sourceTree = "<group>"; };
+		8E0BC84B2336EB0900131080 /* SearchBarsAndPubsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarsAndPubsResponse.swift; sourceTree = "<group>"; };
+		8E5DC8552337F52500BC175B /* ListBarsAndPubsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsCell.swift; sourceTree = "<group>"; };
+		8E5DC8592338109200BC175B /* UIImageView+Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Downloader.swift"; sourceTree = "<group>"; };
 		8EF8909E2336BA590016013B /* Bars&Pubs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bars&Pubs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF890A12336BA590016013B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8EF890A32336BA590016013B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8EF890A62336BA590016013B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EF890A92336BA590016013B /* Bars_Pubs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bars_Pubs.xcdatamodel; sourceTree = "<group>"; };
 		8EF890AB2336BA5A0016013B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +67,13 @@
 		8EF890B52336BA5A0016013B /* Bars&PubsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bars&PubsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF890B92336BA5A0016013B /* Bars_PubsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bars_PubsTests.swift; sourceTree = "<group>"; };
 		8EF890BB2336BA5A0016013B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EF890C62336BB9A0016013B /* ListBarsAndPubsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsPresenter.swift; sourceTree = "<group>"; };
+		8EF890D42336BC420016013B /* BarsAndPubsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsAndPubsWorker.swift; sourceTree = "<group>"; };
+		8EF890D62336BDC90016013B /* BarOrPub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarOrPub.swift; sourceTree = "<group>"; };
+		8EF890D92336C1270016013B /* BarsAndPubsAPIStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsAndPubsAPIStore.swift; sourceTree = "<group>"; };
+		8EF890DB2336C14A0016013B /* BarsAndPubsCoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsAndPubsCoreDataStore.swift; sourceTree = "<group>"; };
+		B8872A374BA178B7BD2790CD /* Pods_Bars_PubsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bars_PubsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64CA58ED8DB0DA6ED557EDC /* Pods-Bars&PubsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bars&PubsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bars&PubsTests/Pods-Bars&PubsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEDBE9F3F2297B4E7B2F6F8B /* Pods_Bars_Pubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +89,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26AE72C85522F340BC39B944 /* Pods_Bars_PubsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E0BC84A2336EAEB00131080 /* SearchBarsAndPubsResponse */ = {
+			isa = PBXGroup;
+			children = (
+				8E0BC84B2336EB0900131080 /* SearchBarsAndPubsResponse.swift */,
+			);
+			path = SearchBarsAndPubsResponse;
+			sourceTree = "<group>";
+		};
+		8E5DC8542337F50500BC175B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8E5DC8552337F52500BC175B /* ListBarsAndPubsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8E5DC8582338106500BC175B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E5DC8592338109200BC175B /* UIImageView+Downloader.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8EF890952336BA590016013B = {
 			isa = PBXGroup;
 			children = (
 				8EF890A02336BA590016013B /* Bars&Pubs */,
 				8EF890B82336BA5A0016013B /* Bars&PubsTests */,
 				8EF8909F2336BA590016013B /* Products */,
+				9DEEAECE0AD78BF648867092 /* Pods */,
+				B34F504BB1879D1D123A02E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,8 +143,12 @@
 		8EF890A02336BA590016013B /* Bars&Pubs */ = {
 			isa = PBXGroup;
 			children = (
+				8E5DC8582338106500BC175B /* Extensions */,
+				8EF890D82336C0ED0016013B /* Services */,
+				8EF890D32336BC050016013B /* Workers */,
+				8EF890D22336BBFF0016013B /* Entities */,
+				8EF890C42336BB530016013B /* Scenes */,
 				8EF890A12336BA590016013B /* AppDelegate.swift */,
-				8EF890A32336BA590016013B /* ViewController.swift */,
 				8EF890A52336BA590016013B /* Main.storyboard */,
 				8EF890AB2336BA5A0016013B /* Assets.xcassets */,
 				8EF890AD2336BA5A0016013B /* LaunchScreen.storyboard */,
@@ -99,6 +167,76 @@
 			path = "Bars&PubsTests";
 			sourceTree = "<group>";
 		};
+		8EF890C42336BB530016013B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8EF890C52336BB5A0016013B /* ListBarsAndPubsScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8EF890C52336BB5A0016013B /* ListBarsAndPubsScene */ = {
+			isa = PBXGroup;
+			children = (
+				8E5DC8542337F50500BC175B /* Cells */,
+				8E0BC8402336D6BA00131080 /* ListBarsAndPubsViewController.swift */,
+				8E0BC8422336D6C600131080 /* ListBarsAndPubsInteractor.swift */,
+				8EF890C62336BB9A0016013B /* ListBarsAndPubsPresenter.swift */,
+				8E0BC8442336D6D100131080 /* ListBarsAndPubsWorker.swift */,
+				8E0BC8462336D6DA00131080 /* ListBarsAndPubsRouter.swift */,
+				8E0BC8482336D6E000131080 /* ListBarsAndPubsModels.swift */,
+			);
+			path = ListBarsAndPubsScene;
+			sourceTree = "<group>";
+		};
+		8EF890D22336BBFF0016013B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8E0BC84A2336EAEB00131080 /* SearchBarsAndPubsResponse */,
+				8EF890D62336BDC90016013B /* BarOrPub.swift */,
+				8E0BC83C2336D4DF00131080 /* ManagedBarOrPub.swift */,
+				8E0BC83E2336D4FF00131080 /* ManagedBarOrPub+Properties.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8EF890D32336BC050016013B /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				8EF890D42336BC420016013B /* BarsAndPubsWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		8EF890D82336C0ED0016013B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8EF890D92336C1270016013B /* BarsAndPubsAPIStore.swift */,
+				8EF890DB2336C14A0016013B /* BarsAndPubsCoreDataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9DEEAECE0AD78BF648867092 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D6BA7B39B6E5B21062ACEBC /* Pods-Bars&Pubs.debug.xcconfig */,
+				3686A053F1DD12A38C10D847 /* Pods-Bars&Pubs.release.xcconfig */,
+				22725789067FC10984EAAE63 /* Pods-Bars&PubsTests.debug.xcconfig */,
+				F64CA58ED8DB0DA6ED557EDC /* Pods-Bars&PubsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B34F504BB1879D1D123A02E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F79E72FFD94985F602A62 /* Pods_Bars_Pubs.framework */,
+				B8872A374BA178B7BD2790CD /* Pods_Bars_PubsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EF890BE2336BA5A0016013B /* Build configuration list for PBXNativeTarget "Bars&Pubs" */;
 			buildPhases = (
+				C83479AEC4F17CEAC31CB35F /* [CP] Check Pods Manifest.lock */,
 				8EF8909A2336BA590016013B /* Sources */,
 				8EF8909B2336BA590016013B /* Frameworks */,
 				8EF8909C2336BA590016013B /* Resources */,
+				ED01A4B728609BBBF4EB1C58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EF890C12336BA5A0016013B /* Build configuration list for PBXNativeTarget "Bars&PubsTests" */;
 			buildPhases = (
+				8FD66D1696896167CA8D95F5 /* [CP] Check Pods Manifest.lock */,
 				8EF890B12336BA5A0016013B /* Sources */,
 				8EF890B22336BA5A0016013B /* Frameworks */,
 				8EF890B32336BA5A0016013B /* Resources */,
@@ -195,14 +336,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8FD66D1696896167CA8D95F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bars&PubsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C83479AEC4F17CEAC31CB35F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bars&Pubs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED01A4B728609BBBF4EB1C58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bars&Pubs/Pods-Bars&Pubs-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bars&Pubs/Pods-Bars&Pubs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8EF8909A2336BA590016013B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EF890A42336BA590016013B /* ViewController.swift in Sources */,
+				8EF890D52336BC420016013B /* BarsAndPubsWorker.swift in Sources */,
+				8E0BC83D2336D4DF00131080 /* ManagedBarOrPub.swift in Sources */,
+				8E0BC8412336D6BA00131080 /* ListBarsAndPubsViewController.swift in Sources */,
+				8EF890D72336BDC90016013B /* BarOrPub.swift in Sources */,
 				8EF890A22336BA590016013B /* AppDelegate.swift in Sources */,
+				8E5DC8562337F52500BC175B /* ListBarsAndPubsCell.swift in Sources */,
+				8E0BC8452336D6D100131080 /* ListBarsAndPubsWorker.swift in Sources */,
+				8EF890CC2336BB9A0016013B /* ListBarsAndPubsPresenter.swift in Sources */,
 				8EF890AA2336BA590016013B /* Bars_Pubs.xcdatamodeld in Sources */,
+				8E0BC8432336D6C600131080 /* ListBarsAndPubsInteractor.swift in Sources */,
+				8E5DC85A2338109200BC175B /* UIImageView+Downloader.swift in Sources */,
+				8E0BC8472336D6DA00131080 /* ListBarsAndPubsRouter.swift in Sources */,
+				8E0BC84C2336EB0900131080 /* SearchBarsAndPubsResponse.swift in Sources */,
+				8E0BC83F2336D4FF00131080 /* ManagedBarOrPub+Properties.swift in Sources */,
+				8EF890DA2336C1270016013B /* BarsAndPubsAPIStore.swift in Sources */,
+				8EF890DC2336C14A0016013B /* BarsAndPubsCoreDataStore.swift in Sources */,
+				8E0BC8492336D6E000131080 /* ListBarsAndPubsModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +586,7 @@
 		};
 		8EF890BF2336BA5A0016013B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D6BA7B39B6E5B21062ACEBC /* Pods-Bars&Pubs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +605,7 @@
 		};
 		8EF890C02336BA5A0016013B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3686A053F1DD12A38C10D847 /* Pods-Bars&Pubs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +624,7 @@
 		};
 		8EF890C22336BA5A0016013B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22725789067FC10984EAAE63 /* Pods-Bars&PubsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -419,6 +646,7 @@
 		};
 		8EF890C32336BA5A0016013B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F64CA58ED8DB0DA6ED557EDC /* Pods-Bars&PubsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
