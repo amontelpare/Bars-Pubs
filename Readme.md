@@ -3,7 +3,10 @@
 Aplicación para test de proceso de selección de la empresa Rappi.
 
 ## Contenido
-* [![Ver video](https://ibb.co/C1bCNj1)](https://youtu.be/IeqmN3iBZ34)
+
+### Video
+[![Ver video](app.gif)](https://youtu.be/IeqmN3iBZ34)
+
 * [Requerimientos](#requerimientos)
 * [Integrar](#instalar)
 	* [CocoaPods](#cocoapods)
