@@ -20,7 +20,7 @@ class ListBarsAndPubsPresenter: ListBarsAndPubsPresentationLogic {
     func presentBarsAndPubs(response: ListBarsAndPubs.List.Response) {
         var displayedBarsOrPubs = [ListBarsAndPubs.List.ViewModel.DisplayedBarOrPub]()
         for a in response.barsAndPubs {
-            let barOrPub = ListBarsAndPubs.List.ViewModel.DisplayedBarOrPub(name: a.name, thumb: a.thumb)
+            let barOrPub = ListBarsAndPubs.List.ViewModel.DisplayedBarOrPub(name: a.name, thumb: a.thumb, rating: a.rating.aggregateRatingCGFloat)
             displayedBarsOrPubs.append(barOrPub)
         }
         
