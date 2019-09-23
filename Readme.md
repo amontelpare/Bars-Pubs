@@ -17,7 +17,7 @@ Aplicación para test de proceso de selección de la empresa Rappi.
 * XCode 10.0+
 * Swift 4.0+
 * iOS 12.4+
-* [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) 1.1.1+
+* [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) 1.7.1+
 
 ## <a name="instalar"></a> Instalar
 
