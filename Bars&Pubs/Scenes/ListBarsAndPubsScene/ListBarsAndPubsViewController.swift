@@ -64,6 +64,7 @@ class ListBarsAndPubsViewController: UIViewController, ListBarsAndPubsDisplayLog
     // MARK: List bars and pubs
   
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     var displayedBarsOrPubs = [ListBarsAndPubs.List.ViewModel.DisplayedBarOrPub]()
     
     func listBarsAndPubs() {
@@ -71,8 +72,23 @@ class ListBarsAndPubsViewController: UIViewController, ListBarsAndPubsDisplayLog
     }
   
     func displayBarsAndPubs(viewModel: ListBarsAndPubs.List.ViewModel) {
-        displayedBarsOrPubs += viewModel.displayedBarsOrPubs
-        self.tableView.reloadData()
+        if viewModel.success {
+            activityIndicatorView?.stopAnimating()
+            displayedBarsOrPubs += viewModel.displayedBarsOrPubs
+            self.tableView.reloadData()
+        } else {
+            handleError(errorTitle: viewModel.errorTitle, errorMessage: viewModel.errorMessage)
+        }
+    }
+    
+    // MARK: Handle error
+    
+    private func handleError(errorTitle: String?, errorMessage: String?) {
+        activityIndicatorView?.stopAnimating()
+        let alert = UIAlertController(title: errorTitle, message: errorMessage, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
@@ -84,8 +100,9 @@ extension ListBarsAndPubsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListBarsAndPubsCell", for: indexPath) as! ListBarsAndPubsCell
         let displayedBarOrPub = displayedBarsOrPubs[indexPath.row]
-        cell.name.text = displayedBarOrPub.name
         cell.thumbImageView?.setImageView(urlString: displayedBarOrPub.thumb)
+        cell.name.text = displayedBarOrPub.name
+        cell.costForTwo.text = displayedBarOrPub.costForTwo
         cell.stars.value = displayedBarOrPub.rating
         
         return cell
@@ -95,7 +112,7 @@ extension ListBarsAndPubsViewController: UITableViewDataSource {
 extension ListBarsAndPubsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if (indexPath.row == displayedBarsOrPubs.count - 1) {
+        if (indexPath.row == displayedBarsOrPubs.count - 10) {
             listBarsAndPubs()
         }
     }

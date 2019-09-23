@@ -15,14 +15,20 @@ enum ListBarsAndPubs {
     enum List {
         struct Response {
             let barsAndPubs: [BarOrPub]
+            let storeError: ListBarsAndPubsStoreError?
         }
+        
         struct ViewModel {
             struct DisplayedBarOrPub {
                 let name: String
                 let thumb: String
                 let rating: CGFloat
+                let costForTwo: String
             }
             
+            var success: Bool
+            var errorTitle: String?
+            var errorMessage: String?
             let displayedBarsOrPubs: [DisplayedBarOrPub]
         }
     }

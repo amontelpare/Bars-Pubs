@@ -19,12 +19,34 @@ class ListBarsAndPubsPresenter: ListBarsAndPubsPresentationLogic {
   
     func presentBarsAndPubs(response: ListBarsAndPubs.List.Response) {
         var displayedBarsOrPubs = [ListBarsAndPubs.List.ViewModel.DisplayedBarOrPub]()
-        for a in response.barsAndPubs {
-            let barOrPub = ListBarsAndPubs.List.ViewModel.DisplayedBarOrPub(name: a.name, thumb: a.thumb, rating: a.rating.aggregateRatingCGFloat)
-            displayedBarsOrPubs.append(barOrPub)
+        for barOrPub in response.barsAndPubs {
+            let displayedBarOrPub = ListBarsAndPubs.List.ViewModel.DisplayedBarOrPub(name: barOrPub.name, thumb: barOrPub.thumb, rating: barOrPub.rating.aggregateRatingCGFloat, costForTwo: "Cost for two: \(barOrPub.averageCostForTwo)")
+            displayedBarsOrPubs.append(displayedBarOrPub)
         }
         
-        let viewModel = ListBarsAndPubs.List.ViewModel(displayedBarsOrPubs: displayedBarsOrPubs)
+        var errorTitle: String? = nil
+        var errorMessage: String? = nil
+        var success: Bool = true
+        if let error = response.storeError {
+            handleError(error:error, success: &success, errorTitle: &errorTitle, errorMessage: &errorMessage)
+        }
+        
+        let viewModel = ListBarsAndPubs.List.ViewModel(success: success, errorTitle: errorTitle, errorMessage: errorMessage, displayedBarsOrPubs: displayedBarsOrPubs)
         viewController?.displayBarsAndPubs(viewModel: viewModel)
+    }
+    
+    // MARK: Handle error
+    
+    private func handleError(error: ListBarsAndPubsStoreError, success: inout Bool, errorTitle: inout String?, errorMessage: inout String?) {
+        switch error {
+        case .ServerError:
+            success = false
+            errorTitle = "Error"
+            errorMessage = "Error fetching data"
+        default:
+            success = false
+            errorTitle = "Error"
+            errorMessage = "Unknown error"
+        }
     }
 }
