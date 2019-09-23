@@ -86,13 +86,14 @@ extension ListBarsAndPubsViewController: UITableViewDataSource {
         let displayedBarOrPub = displayedBarsOrPubs[indexPath.row]
         cell.name.text = displayedBarOrPub.name
         cell.thumbImageView?.setImageView(urlString: displayedBarOrPub.thumb)
+        cell.stars.value = displayedBarOrPub.rating
         
         return cell
     }
 }
 
 extension ListBarsAndPubsViewController: UITableViewDelegate {
-
+    
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if (indexPath.row == displayedBarsOrPubs.count - 1) {
             listBarsAndPubs()
