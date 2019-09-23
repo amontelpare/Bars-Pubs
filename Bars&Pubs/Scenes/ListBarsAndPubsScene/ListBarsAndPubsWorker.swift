@@ -41,6 +41,8 @@ protocol ListBarsAndPubsStoreProtocol {
 // MARK: - Orders store CRUD operation errors
 
 enum ListBarsAndPubsStoreError: Equatable, Error {
+    case DecodeError(String)
+    case ServerError
     case CannotFetch(String)
 }
 
