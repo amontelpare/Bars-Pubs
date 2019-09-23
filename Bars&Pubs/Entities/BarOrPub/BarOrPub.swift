@@ -34,3 +34,14 @@ extension BarOrPub: Decodable {
     }
 }
 
+extension BarOrPub: Equatable {
+    
+    static func ==(lhs: BarOrPub, rhs: BarOrPub) -> Bool {
+        return lhs.name == rhs.name
+            && lhs.timings == rhs.timings
+            && lhs.averageCostForTwo == rhs.averageCostForTwo
+            && lhs.cuisines == rhs.cuisines
+            && lhs.thumb == rhs.thumb
+    }
+}
+

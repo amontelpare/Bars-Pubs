@@ -10,10 +10,15 @@
 		26AE72C85522F340BC39B944 /* Pods_Bars_PubsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8872A374BA178B7BD2790CD /* Pods_Bars_PubsTests.framework */; };
 		8E5DC85A2338109200BC175B /* UIImageView+Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC8592338109200BC175B /* UIImageView+Downloader.swift */; };
 		8E5DC86423381F3100BC175B /* ParametersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC86323381F3100BC175B /* ParametersAPI.swift */; };
-		8E5DC874233820CF00BC175B /* ListBarsAndPubsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC870233820CF00BC175B /* ListBarsAndPubsViewControllerTests.swift */; };
-		8E5DC875233820CF00BC175B /* ListBarsAndPubsWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC871233820CF00BC175B /* ListBarsAndPubsWorkerTests.swift */; };
-		8E5DC876233820CF00BC175B /* ListBarsAndPubsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC872233820CF00BC175B /* ListBarsAndPubsInteractorTests.swift */; };
-		8E5DC877233820CF00BC175B /* ListBarsAndPubsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC873233820CF00BC175B /* ListBarsAndPubsPresenterTests.swift */; };
+		8E601C48233900AD0075139B /* ListBarsAndPubsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E601C44233900AD0075139B /* ListBarsAndPubsViewControllerTests.swift */; };
+		8E601C49233900AD0075139B /* ListBarsAndPubsWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E601C45233900AD0075139B /* ListBarsAndPubsWorkerTests.swift */; };
+		8E601C4A233900AD0075139B /* ListBarsAndPubsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E601C46233900AD0075139B /* ListBarsAndPubsInteractorTests.swift */; };
+		8E601C4B233900AD0075139B /* ListBarsAndPubsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E601C47233900AD0075139B /* ListBarsAndPubsPresenterTests.swift */; };
+		8E601C50233900CC0075139B /* ShowBarOrPubViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E601C4C233900CC0075139B /* ShowBarOrPubViewControllerTests.swift */; };
+		8E601C51233900CC0075139B /* ShowBarOrPubInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E601C4D233900CC0075139B /* ShowBarOrPubInteractorTests.swift */; };
+		8E601C53233900CC0075139B /* ShowBarOrPubPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E601C4F233900CC0075139B /* ShowBarOrPubPresenterTests.swift */; };
+		8E601C56233901A50075139B /* Seeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E601C55233901A50075139B /* Seeds.swift */; };
+		8E601C58233913E30075139B /* BarsAndPubsAPIStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E601C57233913E30075139B /* BarsAndPubsAPIStoreTests.swift */; };
 		8EE3DB0C23382BB2004FF506 /* ShowBarOrPubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB0623382BB2004FF506 /* ShowBarOrPubViewController.swift */; };
 		8EE3DB0D23382BB2004FF506 /* ShowBarOrPubInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB0723382BB2004FF506 /* ShowBarOrPubInteractor.swift */; };
 		8EE3DB102338324D004FF506 /* BarOrPubRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB0F2338324D004FF506 /* BarOrPubRating.swift */; };
@@ -61,10 +66,15 @@
 		3D6F79E72FFD94985F602A62 /* Pods_Bars_Pubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bars_Pubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E5DC8592338109200BC175B /* UIImageView+Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Downloader.swift"; sourceTree = "<group>"; };
 		8E5DC86323381F3100BC175B /* ParametersAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersAPI.swift; sourceTree = "<group>"; };
-		8E5DC870233820CF00BC175B /* ListBarsAndPubsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsViewControllerTests.swift; sourceTree = "<group>"; };
-		8E5DC871233820CF00BC175B /* ListBarsAndPubsWorkerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsWorkerTests.swift; sourceTree = "<group>"; };
-		8E5DC872233820CF00BC175B /* ListBarsAndPubsInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsInteractorTests.swift; sourceTree = "<group>"; };
-		8E5DC873233820CF00BC175B /* ListBarsAndPubsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsPresenterTests.swift; sourceTree = "<group>"; };
+		8E601C44233900AD0075139B /* ListBarsAndPubsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsViewControllerTests.swift; sourceTree = "<group>"; };
+		8E601C45233900AD0075139B /* ListBarsAndPubsWorkerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsWorkerTests.swift; sourceTree = "<group>"; };
+		8E601C46233900AD0075139B /* ListBarsAndPubsInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsInteractorTests.swift; sourceTree = "<group>"; };
+		8E601C47233900AD0075139B /* ListBarsAndPubsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsPresenterTests.swift; sourceTree = "<group>"; };
+		8E601C4C233900CC0075139B /* ShowBarOrPubViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBarOrPubViewControllerTests.swift; sourceTree = "<group>"; };
+		8E601C4D233900CC0075139B /* ShowBarOrPubInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBarOrPubInteractorTests.swift; sourceTree = "<group>"; };
+		8E601C4F233900CC0075139B /* ShowBarOrPubPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBarOrPubPresenterTests.swift; sourceTree = "<group>"; };
+		8E601C55233901A50075139B /* Seeds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seeds.swift; sourceTree = "<group>"; };
+		8E601C57233913E30075139B /* BarsAndPubsAPIStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsAndPubsAPIStoreTests.swift; sourceTree = "<group>"; };
 		8EE3DB0623382BB2004FF506 /* ShowBarOrPubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBarOrPubViewController.swift; sourceTree = "<group>"; };
 		8EE3DB0723382BB2004FF506 /* ShowBarOrPubInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBarOrPubInteractor.swift; sourceTree = "<group>"; };
 		8EE3DB0F2338324D004FF506 /* BarOrPubRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarOrPubRating.swift; sourceTree = "<group>"; };
@@ -139,20 +149,40 @@
 		8E5DC86E233820CF00BC175B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				8E5DC86F233820CF00BC175B /* ListBarsAndPubsTests */,
+				8E601C542339018B0075139B /* Mocks */,
+				8E601C43233900AD0075139B /* ListBarsAndPubsTests */,
+				8E601C42233900940075139B /* ShowBarOrPubTests */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		8E5DC86F233820CF00BC175B /* ListBarsAndPubsTests */ = {
+		8E601C42233900940075139B /* ShowBarOrPubTests */ = {
 			isa = PBXGroup;
 			children = (
-				8E5DC870233820CF00BC175B /* ListBarsAndPubsViewControllerTests.swift */,
-				8E5DC871233820CF00BC175B /* ListBarsAndPubsWorkerTests.swift */,
-				8E5DC872233820CF00BC175B /* ListBarsAndPubsInteractorTests.swift */,
-				8E5DC873233820CF00BC175B /* ListBarsAndPubsPresenterTests.swift */,
+				8E601C4C233900CC0075139B /* ShowBarOrPubViewControllerTests.swift */,
+				8E601C4D233900CC0075139B /* ShowBarOrPubInteractorTests.swift */,
+				8E601C4F233900CC0075139B /* ShowBarOrPubPresenterTests.swift */,
+			);
+			path = ShowBarOrPubTests;
+			sourceTree = "<group>";
+		};
+		8E601C43233900AD0075139B /* ListBarsAndPubsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E601C44233900AD0075139B /* ListBarsAndPubsViewControllerTests.swift */,
+				8E601C45233900AD0075139B /* ListBarsAndPubsWorkerTests.swift */,
+				8E601C46233900AD0075139B /* ListBarsAndPubsInteractorTests.swift */,
+				8E601C47233900AD0075139B /* ListBarsAndPubsPresenterTests.swift */,
 			);
 			path = ListBarsAndPubsTests;
+			sourceTree = "<group>";
+		};
+		8E601C542339018B0075139B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8E601C55233901A50075139B /* Seeds.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		8EE3DB0123382B8A004FF506 /* ShowBarOrPubScene */ = {
@@ -217,6 +247,7 @@
 		8EE3DB3123387F8D004FF506 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8E601C57233913E30075139B /* BarsAndPubsAPIStoreTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -552,10 +583,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E5DC875233820CF00BC175B /* ListBarsAndPubsWorkerTests.swift in Sources */,
-				8E5DC874233820CF00BC175B /* ListBarsAndPubsViewControllerTests.swift in Sources */,
-				8E5DC877233820CF00BC175B /* ListBarsAndPubsPresenterTests.swift in Sources */,
-				8E5DC876233820CF00BC175B /* ListBarsAndPubsInteractorTests.swift in Sources */,
+				8E601C50233900CC0075139B /* ShowBarOrPubViewControllerTests.swift in Sources */,
+				8E601C51233900CC0075139B /* ShowBarOrPubInteractorTests.swift in Sources */,
+				8E601C48233900AD0075139B /* ListBarsAndPubsViewControllerTests.swift in Sources */,
+				8E601C56233901A50075139B /* Seeds.swift in Sources */,
+				8E601C4B233900AD0075139B /* ListBarsAndPubsPresenterTests.swift in Sources */,
+				8E601C49233900AD0075139B /* ListBarsAndPubsWorkerTests.swift in Sources */,
+				8E601C58233913E30075139B /* BarsAndPubsAPIStoreTests.swift in Sources */,
+				8E601C53233900CC0075139B /* ShowBarOrPubPresenterTests.swift in Sources */,
+				8E601C4A233900AD0075139B /* ListBarsAndPubsInteractorTests.swift in Sources */,
 				8EE3DB1523384EE5004FF506 /* RatingWorkerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
