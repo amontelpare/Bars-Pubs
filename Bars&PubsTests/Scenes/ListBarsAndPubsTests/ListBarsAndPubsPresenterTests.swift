@@ -34,26 +34,26 @@ class ListBarsAndPubsPresenterTests: XCTestCase {
   
     // MARK: Test doubles
     
-//    class ListBarsAndPubsDisplayLogicSpy: ListBarsAndPubsDisplayLogic {
-//        var displaySomethingCalled = false
-//    
-//        func displaySomething(viewModel: ListBarsAndPubs.Something.ViewModel) {
-//            displaySomethingCalled = true
-//        }
-//    }
-//  
-//    // MARK: Tests
-//  
-//    func testPresentSomething() {
-//        // Given
-//        let spy = ListBarsAndPubsDisplayLogicSpy()
-//        sut.viewController = spy
-//        let response = ListBarsAndPubs.Something.Response()
-//    
-//        // When
-//        sut.presentSomething(response: response)
-//    
-//        // Then
-//        XCTAssertTrue(spy.displaySomethingCalled, "presentSomething(response:) should ask the view controller to display the result")
-//    }
+    class ListBarsAndPubsDisplayLogicSpy: ListBarsAndPubsDisplayLogic {
+        var displayBarsAndPubsCalled = false
+
+        func displayBarsAndPubs(viewModel: ListBarsAndPubs.List.ViewModel) {
+            displayBarsAndPubsCalled = true
+        }
+    }
+  
+    // MARK: Tests
+  
+    func testPresentBarsAndPubs() {
+        // Given
+        let spy = ListBarsAndPubsDisplayLogicSpy()
+        sut.viewController = spy
+        let response = ListBarsAndPubs.List.Response(barsAndPubs: [], storeError: nil)
+    
+        // When
+        sut.presentBarsAndPubs(response: response)
+    
+        // Then
+        XCTAssertTrue(spy.displayBarsAndPubsCalled, "presentBarsAndPubs(response:) should ask the view controller to display the result")
+    }
 }

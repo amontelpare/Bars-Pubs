@@ -82,8 +82,8 @@ class ListBarsAndPubsViewControllerTests: XCTestCase {
         let tableViewSpy = TableViewSpy()
         sut.tableView = tableViewSpy
 
-        let displayedBarsAndPubs = [ListBarsAndPubs.List.ViewModel.DisplayedBarOrPub(name: "The best pub", thumb: "https://image.jpg", rating: 4.0)]
-        let viewModel = ListBarsAndPubs.List.ViewModel(displayedBarsOrPubs: displayedBarsAndPubs)
+        let displayedBarsAndPubs = [ListBarsAndPubs.List.ViewModel.DisplayedBarOrPub(name: "The best pub", thumb: "https://image.jpg", rating: 4.0, costForTwo: "Cost:2000")]
+        let viewModel = ListBarsAndPubs.List.ViewModel(success: true, errorTitle: nil, errorMessage: nil, displayedBarsOrPubs: displayedBarsAndPubs)
         
         // When
         sut.displayBarsAndPubs(viewModel: viewModel)

@@ -11,9 +11,9 @@ import XCTest
 
 class ListBarsAndPubsWorkerTests: XCTestCase {
     // MARK: Subject under test
-    
     var sut: ListBarsAndPubsWorker!
-    
+    static var testBarsAndPubs: [BarOrPub]!
+
     // MARK: Test lifecycle
     
     override func setUp() {
