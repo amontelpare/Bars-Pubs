@@ -4,6 +4,7 @@ use_frameworks!
 
 def pods
 	pod 'SDWebImage', '~> 5.0.2'
+    pod 'HCSStarRatingView', '~> 1.5'
 end
 
 target 'Bars&Pubs' do
