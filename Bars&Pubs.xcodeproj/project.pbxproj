@@ -8,38 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		26AE72C85522F340BC39B944 /* Pods_Bars_PubsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8872A374BA178B7BD2790CD /* Pods_Bars_PubsTests.framework */; };
-		8E0BC8412336D6BA00131080 /* ListBarsAndPubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BC8402336D6BA00131080 /* ListBarsAndPubsViewController.swift */; };
-		8E0BC8432336D6C600131080 /* ListBarsAndPubsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BC8422336D6C600131080 /* ListBarsAndPubsInteractor.swift */; };
-		8E0BC8452336D6D100131080 /* ListBarsAndPubsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BC8442336D6D100131080 /* ListBarsAndPubsWorker.swift */; };
-		8E0BC8472336D6DA00131080 /* ListBarsAndPubsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BC8462336D6DA00131080 /* ListBarsAndPubsRouter.swift */; };
-		8E0BC8492336D6E000131080 /* ListBarsAndPubsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BC8482336D6E000131080 /* ListBarsAndPubsModels.swift */; };
-		8E0BC84C2336EB0900131080 /* SearchBarsAndPubsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BC84B2336EB0900131080 /* SearchBarsAndPubsResponse.swift */; };
-		8E5DC8562337F52500BC175B /* ListBarsAndPubsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC8552337F52500BC175B /* ListBarsAndPubsCell.swift */; };
 		8E5DC85A2338109200BC175B /* UIImageView+Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC8592338109200BC175B /* UIImageView+Downloader.swift */; };
-		8E5DC85F23381EE600BC175B /* ManagedBarOrPub+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC85C23381EE600BC175B /* ManagedBarOrPub+Properties.swift */; };
-		8E5DC86023381EE600BC175B /* BarOrPub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC85D23381EE600BC175B /* BarOrPub.swift */; };
-		8E5DC86123381EE600BC175B /* ManagedBarOrPub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC85E23381EE600BC175B /* ManagedBarOrPub.swift */; };
 		8E5DC86423381F3100BC175B /* ParametersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC86323381F3100BC175B /* ParametersAPI.swift */; };
 		8E5DC874233820CF00BC175B /* ListBarsAndPubsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC870233820CF00BC175B /* ListBarsAndPubsViewControllerTests.swift */; };
 		8E5DC875233820CF00BC175B /* ListBarsAndPubsWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC871233820CF00BC175B /* ListBarsAndPubsWorkerTests.swift */; };
 		8E5DC876233820CF00BC175B /* ListBarsAndPubsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC872233820CF00BC175B /* ListBarsAndPubsInteractorTests.swift */; };
 		8E5DC877233820CF00BC175B /* ListBarsAndPubsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5DC873233820CF00BC175B /* ListBarsAndPubsPresenterTests.swift */; };
-		8EE3DB0823382BB2004FF506 /* ShowBarOrPubPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB0223382BB2004FF506 /* ShowBarOrPubPresenter.swift */; };
-		8EE3DB0923382BB2004FF506 /* ShowBarOrPubWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB0323382BB2004FF506 /* ShowBarOrPubWorker.swift */; };
-		8EE3DB0A23382BB2004FF506 /* ShowBarOrPubRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB0423382BB2004FF506 /* ShowBarOrPubRouter.swift */; };
-		8EE3DB0B23382BB2004FF506 /* ShowBarOrPubModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB0523382BB2004FF506 /* ShowBarOrPubModels.swift */; };
 		8EE3DB0C23382BB2004FF506 /* ShowBarOrPubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB0623382BB2004FF506 /* ShowBarOrPubViewController.swift */; };
 		8EE3DB0D23382BB2004FF506 /* ShowBarOrPubInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB0723382BB2004FF506 /* ShowBarOrPubInteractor.swift */; };
 		8EE3DB102338324D004FF506 /* BarOrPubRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB0F2338324D004FF506 /* BarOrPubRating.swift */; };
 		8EE3DB1223384CAC004FF506 /* RatingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB1123384CAC004FF506 /* RatingWorker.swift */; };
 		8EE3DB1523384EE5004FF506 /* RatingWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB1423384EE5004FF506 /* RatingWorkerTests.swift */; };
 		8EE3DB1823385A51004FF506 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB1723385A51004FF506 /* Location.swift */; };
+		8EE3DB22233878D1004FF506 /* ListBarsAndPubsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB1B233878D1004FF506 /* ListBarsAndPubsCell.swift */; };
+		8EE3DB23233878D1004FF506 /* ListBarsAndPubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB1C233878D1004FF506 /* ListBarsAndPubsViewController.swift */; };
+		8EE3DB24233878D1004FF506 /* ListBarsAndPubsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB1D233878D1004FF506 /* ListBarsAndPubsPresenter.swift */; };
+		8EE3DB26233878D1004FF506 /* ListBarsAndPubsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB1F233878D1004FF506 /* ListBarsAndPubsWorker.swift */; };
+		8EE3DB27233878D1004FF506 /* ListBarsAndPubsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB20233878D1004FF506 /* ListBarsAndPubsRouter.swift */; };
+		8EE3DB28233878D1004FF506 /* ListBarsAndPubsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB21233878D1004FF506 /* ListBarsAndPubsModels.swift */; };
+		8EE3DB2A233878EE004FF506 /* ShowBarOrPubPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB29233878EE004FF506 /* ShowBarOrPubPresenter.swift */; };
+		8EE3DB2C233878F7004FF506 /* ShowBarOrPubWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB2B233878F7004FF506 /* ShowBarOrPubWorker.swift */; };
+		8EE3DB2E233878FE004FF506 /* ShowBarOrPubRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB2D233878FD004FF506 /* ShowBarOrPubRouter.swift */; };
+		8EE3DB3023387905004FF506 /* ShowBarOrPubModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB2F23387905004FF506 /* ShowBarOrPubModels.swift */; };
+		8EE3DB332338865A004FF506 /* ListBarsAndPubsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB322338865A004FF506 /* ListBarsAndPubsInteractor.swift */; };
+		8EE3DB3723388F86004FF506 /* ManagedBarOrPub+Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB3523388F86004FF506 /* ManagedBarOrPub+Converter.swift */; };
+		8EE3DB3823388F86004FF506 /* BarOrPub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB3623388F86004FF506 /* BarOrPub.swift */; };
+		8EE3DB3B23388F8D004FF506 /* SearchBarsAndPubsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3DB3A23388F8D004FF506 /* SearchBarsAndPubsResponse.swift */; };
 		8EF890A22336BA590016013B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF890A12336BA590016013B /* AppDelegate.swift */; };
 		8EF890A72336BA590016013B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF890A52336BA590016013B /* Main.storyboard */; };
 		8EF890AA2336BA590016013B /* Bars_Pubs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EF890A82336BA590016013B /* Bars_Pubs.xcdatamodeld */; };
 		8EF890AC2336BA5A0016013B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF890AB2336BA5A0016013B /* Assets.xcassets */; };
 		8EF890AF2336BA5A0016013B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF890AD2336BA5A0016013B /* LaunchScreen.storyboard */; };
-		8EF890CC2336BB9A0016013B /* ListBarsAndPubsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF890C62336BB9A0016013B /* ListBarsAndPubsPresenter.swift */; };
 		8EF890DA2336C1270016013B /* BarsAndPubsAPIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF890D92336C1270016013B /* BarsAndPubsAPIStore.swift */; };
 		8EF890DC2336C14A0016013B /* BarsAndPubsCoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF890DB2336C14A0016013B /* BarsAndPubsCoreDataStore.swift */; };
 		EEDBE9F3F2297B4E7B2F6F8B /* Pods_Bars_Pubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6F79E72FFD94985F602A62 /* Pods_Bars_Pubs.framework */; };
@@ -60,32 +59,32 @@
 		22725789067FC10984EAAE63 /* Pods-Bars&PubsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bars&PubsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bars&PubsTests/Pods-Bars&PubsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3686A053F1DD12A38C10D847 /* Pods-Bars&Pubs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bars&Pubs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bars&Pubs/Pods-Bars&Pubs.release.xcconfig"; sourceTree = "<group>"; };
 		3D6F79E72FFD94985F602A62 /* Pods_Bars_Pubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bars_Pubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E0BC8402336D6BA00131080 /* ListBarsAndPubsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsViewController.swift; sourceTree = "<group>"; };
-		8E0BC8422336D6C600131080 /* ListBarsAndPubsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsInteractor.swift; sourceTree = "<group>"; };
-		8E0BC8442336D6D100131080 /* ListBarsAndPubsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsWorker.swift; sourceTree = "<group>"; };
-		8E0BC8462336D6DA00131080 /* ListBarsAndPubsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsRouter.swift; sourceTree = "<group>"; };
-		8E0BC8482336D6E000131080 /* ListBarsAndPubsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsModels.swift; sourceTree = "<group>"; };
-		8E0BC84B2336EB0900131080 /* SearchBarsAndPubsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarsAndPubsResponse.swift; sourceTree = "<group>"; };
-		8E5DC8552337F52500BC175B /* ListBarsAndPubsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsCell.swift; sourceTree = "<group>"; };
 		8E5DC8592338109200BC175B /* UIImageView+Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Downloader.swift"; sourceTree = "<group>"; };
-		8E5DC85C23381EE600BC175B /* ManagedBarOrPub+Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedBarOrPub+Properties.swift"; sourceTree = "<group>"; };
-		8E5DC85D23381EE600BC175B /* BarOrPub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarOrPub.swift; sourceTree = "<group>"; };
-		8E5DC85E23381EE600BC175B /* ManagedBarOrPub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedBarOrPub.swift; sourceTree = "<group>"; };
 		8E5DC86323381F3100BC175B /* ParametersAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersAPI.swift; sourceTree = "<group>"; };
 		8E5DC870233820CF00BC175B /* ListBarsAndPubsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsViewControllerTests.swift; sourceTree = "<group>"; };
 		8E5DC871233820CF00BC175B /* ListBarsAndPubsWorkerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsWorkerTests.swift; sourceTree = "<group>"; };
 		8E5DC872233820CF00BC175B /* ListBarsAndPubsInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsInteractorTests.swift; sourceTree = "<group>"; };
 		8E5DC873233820CF00BC175B /* ListBarsAndPubsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsPresenterTests.swift; sourceTree = "<group>"; };
-		8EE3DB0223382BB2004FF506 /* ShowBarOrPubPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBarOrPubPresenter.swift; sourceTree = "<group>"; };
-		8EE3DB0323382BB2004FF506 /* ShowBarOrPubWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBarOrPubWorker.swift; sourceTree = "<group>"; };
-		8EE3DB0423382BB2004FF506 /* ShowBarOrPubRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBarOrPubRouter.swift; sourceTree = "<group>"; };
-		8EE3DB0523382BB2004FF506 /* ShowBarOrPubModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBarOrPubModels.swift; sourceTree = "<group>"; };
 		8EE3DB0623382BB2004FF506 /* ShowBarOrPubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBarOrPubViewController.swift; sourceTree = "<group>"; };
 		8EE3DB0723382BB2004FF506 /* ShowBarOrPubInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBarOrPubInteractor.swift; sourceTree = "<group>"; };
 		8EE3DB0F2338324D004FF506 /* BarOrPubRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarOrPubRating.swift; sourceTree = "<group>"; };
 		8EE3DB1123384CAC004FF506 /* RatingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingWorker.swift; sourceTree = "<group>"; };
 		8EE3DB1423384EE5004FF506 /* RatingWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingWorkerTests.swift; sourceTree = "<group>"; };
 		8EE3DB1723385A51004FF506 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		8EE3DB1B233878D1004FF506 /* ListBarsAndPubsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsCell.swift; sourceTree = "<group>"; };
+		8EE3DB1C233878D1004FF506 /* ListBarsAndPubsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsViewController.swift; sourceTree = "<group>"; };
+		8EE3DB1D233878D1004FF506 /* ListBarsAndPubsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsPresenter.swift; sourceTree = "<group>"; };
+		8EE3DB1F233878D1004FF506 /* ListBarsAndPubsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsWorker.swift; sourceTree = "<group>"; };
+		8EE3DB20233878D1004FF506 /* ListBarsAndPubsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsRouter.swift; sourceTree = "<group>"; };
+		8EE3DB21233878D1004FF506 /* ListBarsAndPubsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsModels.swift; sourceTree = "<group>"; };
+		8EE3DB29233878EE004FF506 /* ShowBarOrPubPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowBarOrPubPresenter.swift; sourceTree = "<group>"; };
+		8EE3DB2B233878F7004FF506 /* ShowBarOrPubWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowBarOrPubWorker.swift; sourceTree = "<group>"; };
+		8EE3DB2D233878FD004FF506 /* ShowBarOrPubRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowBarOrPubRouter.swift; sourceTree = "<group>"; };
+		8EE3DB2F23387905004FF506 /* ShowBarOrPubModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowBarOrPubModels.swift; sourceTree = "<group>"; };
+		8EE3DB322338865A004FF506 /* ListBarsAndPubsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsInteractor.swift; sourceTree = "<group>"; };
+		8EE3DB3523388F86004FF506 /* ManagedBarOrPub+Converter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedBarOrPub+Converter.swift"; sourceTree = "<group>"; };
+		8EE3DB3623388F86004FF506 /* BarOrPub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarOrPub.swift; sourceTree = "<group>"; };
+		8EE3DB3A23388F8D004FF506 /* SearchBarsAndPubsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarsAndPubsResponse.swift; sourceTree = "<group>"; };
 		8EF8909E2336BA590016013B /* Bars&Pubs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bars&Pubs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF890A12336BA590016013B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EF890A62336BA590016013B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,7 +94,6 @@
 		8EF890B02336BA5A0016013B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EF890B52336BA5A0016013B /* Bars&PubsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bars&PubsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF890BB2336BA5A0016013B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EF890C62336BB9A0016013B /* ListBarsAndPubsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBarsAndPubsPresenter.swift; sourceTree = "<group>"; };
 		8EF890D92336C1270016013B /* BarsAndPubsAPIStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsAndPubsAPIStore.swift; sourceTree = "<group>"; };
 		8EF890DB2336C14A0016013B /* BarsAndPubsCoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsAndPubsCoreDataStore.swift; sourceTree = "<group>"; };
 		B8872A374BA178B7BD2790CD /* Pods_Bars_PubsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bars_PubsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,38 +120,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8E0BC84A2336EAEB00131080 /* SearchBarsAndPubsResponse */ = {
-			isa = PBXGroup;
-			children = (
-				8E0BC84B2336EB0900131080 /* SearchBarsAndPubsResponse.swift */,
-			);
-			path = SearchBarsAndPubsResponse;
-			sourceTree = "<group>";
-		};
-		8E5DC8542337F50500BC175B /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				8E5DC8552337F52500BC175B /* ListBarsAndPubsCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		8E5DC8582338106500BC175B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				8E5DC8592338109200BC175B /* UIImageView+Downloader.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		8E5DC85B23381E9B00BC175B /* BarOrPub */ = {
-			isa = PBXGroup;
-			children = (
-				8E5DC85D23381EE600BC175B /* BarOrPub.swift */,
-				8E5DC85E23381EE600BC175B /* ManagedBarOrPub.swift */,
-				8E5DC85C23381EE600BC175B /* ManagedBarOrPub+Properties.swift */,
-			);
-			path = BarOrPub;
 			sourceTree = "<group>";
 		};
 		8E5DC86223381EF700BC175B /* ParametersAPI */ = {
@@ -186,12 +158,12 @@
 		8EE3DB0123382B8A004FF506 /* ShowBarOrPubScene */ = {
 			isa = PBXGroup;
 			children = (
-				8EE3DB0223382BB2004FF506 /* ShowBarOrPubPresenter.swift */,
-				8EE3DB0323382BB2004FF506 /* ShowBarOrPubWorker.swift */,
-				8EE3DB0423382BB2004FF506 /* ShowBarOrPubRouter.swift */,
-				8EE3DB0523382BB2004FF506 /* ShowBarOrPubModels.swift */,
 				8EE3DB0623382BB2004FF506 /* ShowBarOrPubViewController.swift */,
 				8EE3DB0723382BB2004FF506 /* ShowBarOrPubInteractor.swift */,
+				8EE3DB29233878EE004FF506 /* ShowBarOrPubPresenter.swift */,
+				8EE3DB2B233878F7004FF506 /* ShowBarOrPubWorker.swift */,
+				8EE3DB2D233878FD004FF506 /* ShowBarOrPubRouter.swift */,
+				8EE3DB2F23387905004FF506 /* ShowBarOrPubModels.swift */,
 			);
 			path = ShowBarOrPubScene;
 			sourceTree = "<group>";
@@ -218,6 +190,52 @@
 				8EE3DB1723385A51004FF506 /* Location.swift */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		8EE3DB19233878D1004FF506 /* ListBarsAndPubsScene */ = {
+			isa = PBXGroup;
+			children = (
+				8EE3DB1A233878D1004FF506 /* Cells */,
+				8EE3DB1C233878D1004FF506 /* ListBarsAndPubsViewController.swift */,
+				8EE3DB322338865A004FF506 /* ListBarsAndPubsInteractor.swift */,
+				8EE3DB1D233878D1004FF506 /* ListBarsAndPubsPresenter.swift */,
+				8EE3DB1F233878D1004FF506 /* ListBarsAndPubsWorker.swift */,
+				8EE3DB20233878D1004FF506 /* ListBarsAndPubsRouter.swift */,
+				8EE3DB21233878D1004FF506 /* ListBarsAndPubsModels.swift */,
+			);
+			path = ListBarsAndPubsScene;
+			sourceTree = "<group>";
+		};
+		8EE3DB1A233878D1004FF506 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8EE3DB1B233878D1004FF506 /* ListBarsAndPubsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8EE3DB3123387F8D004FF506 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8EE3DB3423388F86004FF506 /* BarOrPub */ = {
+			isa = PBXGroup;
+			children = (
+				8EE3DB3523388F86004FF506 /* ManagedBarOrPub+Converter.swift */,
+				8EE3DB3623388F86004FF506 /* BarOrPub.swift */,
+			);
+			path = BarOrPub;
+			sourceTree = "<group>";
+		};
+		8EE3DB3923388F8D004FF506 /* SearchBarsAndPubsResponse */ = {
+			isa = PBXGroup;
+			children = (
+				8EE3DB3A23388F8D004FF506 /* SearchBarsAndPubsResponse.swift */,
+			);
+			path = SearchBarsAndPubsResponse;
 			sourceTree = "<group>";
 		};
 		8EF890952336BA590016013B = {
@@ -261,6 +279,7 @@
 		8EF890B82336BA5A0016013B /* Bars&PubsTests */ = {
 			isa = PBXGroup;
 			children = (
+				8EE3DB3123387F8D004FF506 /* Services */,
 				8EE3DB1323384EC7004FF506 /* Workers */,
 				8E5DC86E233820CF00BC175B /* Scenes */,
 				8EF890BB2336BA5A0016013B /* Info.plist */,
@@ -271,34 +290,20 @@
 		8EF890C42336BB530016013B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				8EE3DB19233878D1004FF506 /* ListBarsAndPubsScene */,
 				8EE3DB0123382B8A004FF506 /* ShowBarOrPubScene */,
-				8EF890C52336BB5A0016013B /* ListBarsAndPubsScene */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		8EF890C52336BB5A0016013B /* ListBarsAndPubsScene */ = {
-			isa = PBXGroup;
-			children = (
-				8E5DC8542337F50500BC175B /* Cells */,
-				8E0BC8402336D6BA00131080 /* ListBarsAndPubsViewController.swift */,
-				8E0BC8422336D6C600131080 /* ListBarsAndPubsInteractor.swift */,
-				8EF890C62336BB9A0016013B /* ListBarsAndPubsPresenter.swift */,
-				8E0BC8442336D6D100131080 /* ListBarsAndPubsWorker.swift */,
-				8E0BC8462336D6DA00131080 /* ListBarsAndPubsRouter.swift */,
-				8E0BC8482336D6E000131080 /* ListBarsAndPubsModels.swift */,
-			);
-			path = ListBarsAndPubsScene;
 			sourceTree = "<group>";
 		};
 		8EF890D22336BBFF0016013B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				8EE3DB3923388F8D004FF506 /* SearchBarsAndPubsResponse */,
+				8EE3DB3423388F86004FF506 /* BarOrPub */,
 				8EE3DB1623385A41004FF506 /* Location */,
 				8EE3DB0E23383227004FF506 /* BarOrPubRating */,
 				8E5DC86223381EF700BC175B /* ParametersAPI */,
-				8E5DC85B23381E9B00BC175B /* BarOrPub */,
-				8E0BC84A2336EAEB00131080 /* SearchBarsAndPubsResponse */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -515,32 +520,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E0BC8412336D6BA00131080 /* ListBarsAndPubsViewController.swift in Sources */,
+				8EE3DB27233878D1004FF506 /* ListBarsAndPubsRouter.swift in Sources */,
 				8EE3DB102338324D004FF506 /* BarOrPubRating.swift in Sources */,
+				8EE3DB2E233878FE004FF506 /* ShowBarOrPubRouter.swift in Sources */,
+				8EE3DB22233878D1004FF506 /* ListBarsAndPubsCell.swift in Sources */,
+				8EE3DB23233878D1004FF506 /* ListBarsAndPubsViewController.swift in Sources */,
 				8EF890A22336BA590016013B /* AppDelegate.swift in Sources */,
-				8EE3DB0B23382BB2004FF506 /* ShowBarOrPubModels.swift in Sources */,
-				8E5DC8562337F52500BC175B /* ListBarsAndPubsCell.swift in Sources */,
-				8E0BC8452336D6D100131080 /* ListBarsAndPubsWorker.swift in Sources */,
 				8EE3DB1823385A51004FF506 /* Location.swift in Sources */,
-				8EF890CC2336BB9A0016013B /* ListBarsAndPubsPresenter.swift in Sources */,
 				8EE3DB1223384CAC004FF506 /* RatingWorker.swift in Sources */,
-				8E5DC86023381EE600BC175B /* BarOrPub.swift in Sources */,
 				8EE3DB0D23382BB2004FF506 /* ShowBarOrPubInteractor.swift in Sources */,
-				8EE3DB0923382BB2004FF506 /* ShowBarOrPubWorker.swift in Sources */,
+				8EE3DB24233878D1004FF506 /* ListBarsAndPubsPresenter.swift in Sources */,
 				8E5DC86423381F3100BC175B /* ParametersAPI.swift in Sources */,
+				8EE3DB26233878D1004FF506 /* ListBarsAndPubsWorker.swift in Sources */,
 				8EF890AA2336BA590016013B /* Bars_Pubs.xcdatamodeld in Sources */,
-				8E0BC8432336D6C600131080 /* ListBarsAndPubsInteractor.swift in Sources */,
-				8EE3DB0A23382BB2004FF506 /* ShowBarOrPubRouter.swift in Sources */,
+				8EE3DB3723388F86004FF506 /* ManagedBarOrPub+Converter.swift in Sources */,
 				8E5DC85A2338109200BC175B /* UIImageView+Downloader.swift in Sources */,
-				8EE3DB0823382BB2004FF506 /* ShowBarOrPubPresenter.swift in Sources */,
 				8EE3DB0C23382BB2004FF506 /* ShowBarOrPubViewController.swift in Sources */,
-				8E0BC8472336D6DA00131080 /* ListBarsAndPubsRouter.swift in Sources */,
-				8E0BC84C2336EB0900131080 /* SearchBarsAndPubsResponse.swift in Sources */,
-				8E5DC86123381EE600BC175B /* ManagedBarOrPub.swift in Sources */,
+				8EE3DB3B23388F8D004FF506 /* SearchBarsAndPubsResponse.swift in Sources */,
+				8EE3DB332338865A004FF506 /* ListBarsAndPubsInteractor.swift in Sources */,
+				8EE3DB2A233878EE004FF506 /* ShowBarOrPubPresenter.swift in Sources */,
+				8EE3DB2C233878F7004FF506 /* ShowBarOrPubWorker.swift in Sources */,
 				8EF890DA2336C1270016013B /* BarsAndPubsAPIStore.swift in Sources */,
+				8EE3DB28233878D1004FF506 /* ListBarsAndPubsModels.swift in Sources */,
 				8EF890DC2336C14A0016013B /* BarsAndPubsCoreDataStore.swift in Sources */,
-				8E0BC8492336D6E000131080 /* ListBarsAndPubsModels.swift in Sources */,
-				8E5DC85F23381EE600BC175B /* ManagedBarOrPub+Properties.swift in Sources */,
+				8EE3DB3823388F86004FF506 /* BarOrPub.swift in Sources */,
+				8EE3DB3023387905004FF506 /* ShowBarOrPubModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

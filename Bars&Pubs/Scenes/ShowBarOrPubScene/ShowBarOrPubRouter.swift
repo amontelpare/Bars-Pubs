@@ -18,8 +18,4 @@ protocol ShowBarOrPubDataPassing {
 class ShowBarOrPubRouter: NSObject, ShowBarOrPubRoutingLogic, ShowBarOrPubDataPassing {
     weak var viewController: ShowBarOrPubViewController?
     var dataStore: ShowBarOrPubDataStore?
-  
-    // MARK: Routing
-    
-    // MARK: Passing data
 }

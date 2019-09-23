@@ -11,6 +11,7 @@ import MapKit
 
 protocol ShowBarOrPubDisplayLogic: class {
     func displayMap(viewModel: ShowBarOrPub.ShowMap.ViewModel)
+    func displayDetails(viewModel: ShowBarOrPub.ShowDetails.ViewModel)
 }
 
 class ShowBarOrPubViewController: UIViewController, ShowBarOrPubDisplayLogic {
@@ -60,6 +61,7 @@ class ShowBarOrPubViewController: UIViewController, ShowBarOrPubDisplayLogic {
     override func viewDidLoad() {
         super.viewDidLoad()
         showMap()
+        showDetails()
     }
   
     // MARK: Show map
@@ -73,15 +75,9 @@ class ShowBarOrPubViewController: UIViewController, ShowBarOrPubDisplayLogic {
     func displayMap(viewModel: ShowBarOrPub.ShowMap.ViewModel) {
         let displayedBarOrPub = viewModel.displayedBarOrPub
         let clLocation = CLLocationCoordinate2D(latitude: displayedBarOrPub.latitude, longitude: displayedBarOrPub.longitude)
-        
-        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-        let region = MKCoordinateRegion(center: clLocation, span: span)
-        mapView.setRegion(region, animated: true)
-        
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = clLocation
-        annotation.title = displayedBarOrPub.name
-        mapView.addAnnotation(annotation)
+
+        setRegion(clLocation: clLocation)
+        addAnotation(clLocation: clLocation, name: displayedBarOrPub.name)
     }
     
     // Show details
@@ -94,7 +90,22 @@ class ShowBarOrPubViewController: UIViewController, ShowBarOrPubDisplayLogic {
     }
     
     func displayDetails(viewModel: ShowBarOrPub.ShowDetails.ViewModel) {
-        
+        cuisines.text = viewModel.displayedBarOrPub.cuisines
+        timings.text = viewModel.displayedBarOrPub.timings
     }
     
+    // MARK: Private methods
+    
+    private func setRegion(clLocation: CLLocationCoordinate2D) {
+        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let region = MKCoordinateRegion(center: clLocation, span: span)
+        mapView.setRegion(region, animated: true)
+    }
+    
+    private func addAnotation(clLocation: CLLocationCoordinate2D, name: String) {
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = clLocation
+        annotation.title = name
+        mapView.addAnnotation(annotation)
+    }
 }
