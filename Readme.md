@@ -8,9 +8,9 @@ Aplicación para test de proceso de selección de la empresa Rappi.
 * [Integrar](#instalar)
 	* [CocoaPods](#cocoapods)
 * [Consideraciones](#consideraciones)
-        * [API](#api)
-        * [iOS](#ios)
-        * [Metodología](#metodologia)
+   * [API](#api)
+   * [iOS](#ios)
+   * [Metodología](#metodologia)
 
 ## <a name="requerimientos"></a> Requerimientos
 
