@@ -13,13 +13,15 @@ protocol ListBarsAndPubsBusinessLogic {
 }
 
 protocol ListBarsAndPubsDataStore {
-    //var name: String { get set }
+    var barsAndPubs: [BarOrPub] { get set }
 }
 
 class ListBarsAndPubsInteractor: ListBarsAndPubsBusinessLogic, ListBarsAndPubsDataStore {
     var presenter: ListBarsAndPubsPresentationLogic?
     var worker: ListBarsAndPubsWorker?
+    var ratingWorker: RatingWorker! = RatingWorker()
     var startIndexForService: Int = 0
+    var barsAndPubs = [BarOrPub]()
   
     // MARK: List bars and pubs
   
@@ -29,13 +31,28 @@ class ListBarsAndPubsInteractor: ListBarsAndPubsBusinessLogic, ListBarsAndPubsDa
         worker?.fetchBarsAndPubs(startAt: startIndexForService, completionHandler: { (searchBarsAndPubsResponse) in
             do {
                 let searchBarsAndPubsResponse = try searchBarsAndPubsResponse()
-                let response = ListBarsAndPubs.List.Response(barsAndPubs: searchBarsAndPubsResponse.barsAndPubs)
+                var barsAndPubs = searchBarsAndPubsResponse.barsAndPubs
+                barsAndPubs = self.roundBarsAndPubsRatings(barsAndPubs: barsAndPubs)
+                let response = ListBarsAndPubs.List.Response(barsAndPubs: barsAndPubs)
                 self.presenter?.presentBarsAndPubs(response: response)
-                self.startIndexForService += searchBarsAndPubsResponse.barsAndPubs.count
+                self.barsAndPubs += barsAndPubs
+                self.startIndexForService += barsAndPubs.count
             } catch let error {
                 
             }
             self.worker = nil
         })
+    }
+    
+    // Private methods
+    
+    private func roundBarsAndPubsRatings(barsAndPubs: [BarOrPub]) -> [BarOrPub] {
+        let _barsAndPubs: [BarOrPub] = barsAndPubs.map({ (barOrPub) in
+            var barOrPub = barOrPub
+            barOrPub.roundRating(ratingRounded: self.ratingWorker!.roundToDisplayStars(rating: barOrPub.rating.aggregateRatingCGFloat))
+            return barOrPub
+        })
+        
+        return _barsAndPubs
     }
 }
