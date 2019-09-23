@@ -25,4 +25,3 @@ enum ApiAuth: String {
     case key = "user-key"
     case value = "afedf265c9253be3b47f0be8a4744c50"//"98946139a3526851e43b301a1832f3d7"
 }
-//afedf265c9253be3b47f0be8a4744c50

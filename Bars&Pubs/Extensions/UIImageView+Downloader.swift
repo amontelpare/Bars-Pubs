@@ -16,8 +16,10 @@ extension UIImageView {
             self.setImageView(url: url)
         }
     }
-    
+
     func setImageView(url: URL) {
+        self.sd_imageIndicator = SDWebImageActivityIndicator.gray
+        self.sd_imageIndicator?.startAnimatingIndicator()
         self.sd_setImage(with: url, placeholderImage: UIImage(named: "no-image"), options: [.delayPlaceholder, .allowInvalidSSLCertificates], completed: { (image, error, _, _) in
             self.sd_imageIndicator?.stopAnimatingIndicator()
         })
