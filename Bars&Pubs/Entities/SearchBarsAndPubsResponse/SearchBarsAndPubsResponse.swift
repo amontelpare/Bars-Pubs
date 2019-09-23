@@ -8,13 +8,15 @@
 
 import Foundation
 
-struct SearchBarsAndPubsResponse: Decodable {
+struct SearchBarsAndPubsResponse {
     let resultsFound: Int
     let resultsStart: Int
     let resultsShown: Int
     let barsAndPubsArrayOfDictionaries: [[String:BarOrPub]]
-    
-    enum CodingKeys: String, CodingKey{
+}
+
+extension SearchBarsAndPubsResponse: Decodable {
+    enum CodingKeys: String, CodingKey {
         case resultsFound = "results_found"
         case resultsStart = "results_start"
         case resultsShown = "results_shown"
