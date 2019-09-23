@@ -20,6 +20,7 @@ enum ListBarsAndPubs {
             struct DisplayedBarOrPub {
                 let name: String
                 let thumb: String
+                let rating: CGFloat
             }
             
             let displayedBarsOrPubs: [DisplayedBarOrPub]
