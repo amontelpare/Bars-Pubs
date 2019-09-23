@@ -18,7 +18,7 @@ protocol ListBarsAndPubsDataStore {
 
 class ListBarsAndPubsInteractor: ListBarsAndPubsBusinessLogic, ListBarsAndPubsDataStore {
     var presenter: ListBarsAndPubsPresentationLogic?
-    var worker: ListBarsAndPubsWorker?
+    var worker: ListBarsAndPubsWorker! = ListBarsAndPubsWorker()
     var ratingWorker: RatingWorker! = RatingWorker()
     var startIndexForService: Int = 0
     var barsAndPubs = [BarOrPub]()
@@ -26,22 +26,22 @@ class ListBarsAndPubsInteractor: ListBarsAndPubsBusinessLogic, ListBarsAndPubsDa
     // MARK: List bars and pubs
   
     func listBarsAndPubs() {
-        guard worker == nil else { return }
-        worker = ListBarsAndPubsWorker()
         worker?.fetchBarsAndPubs(startAt: startIndexForService, completionHandler: { (searchBarsAndPubsResponse) in
             do {
                 let searchBarsAndPubsResponse = try searchBarsAndPubsResponse()
                 var barsAndPubs = searchBarsAndPubsResponse.barsAndPubs
                 barsAndPubs = self.roundBarsAndPubsRatings(barsAndPubs: barsAndPubs)
-                let response = ListBarsAndPubs.List.Response(barsAndPubs: barsAndPubs)
+                let response = ListBarsAndPubs.List.Response(barsAndPubs: barsAndPubs, storeError: nil)
                 self.presenter?.presentBarsAndPubs(response: response)
                 self.barsAndPubs += barsAndPubs
                 self.startIndexForService += barsAndPubs.count
             } catch let error {
-                
+                let response = ListBarsAndPubs.List.Response(barsAndPubs: [], storeError: error as? ListBarsAndPubsStoreError)
+                self.presenter?.presentBarsAndPubs(response: response)
             }
-            self.worker = nil
+            self.worker = ListBarsAndPubsWorker()
         })
+        worker = nil
     }
     
     // Private methods

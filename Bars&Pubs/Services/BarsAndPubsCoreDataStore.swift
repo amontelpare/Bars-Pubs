@@ -9,18 +9,7 @@
 import CoreData
 
 class BarsAndPubsCoreDataStore: ListBarsAndPubsStoreProtocol {
-    func fetchBarsAndPubs(category: Categories, sort: SortBy, order: SortOrder, count: Int, startAt: Int, completionHandler: @escaping (() throws -> SearchBarsAndPubsResponse) -> Void) {
-        
-    }
-    
-    func fetchBarsAndPubs(category: Categories, sort: SortBy, order: SortOrder, count: Int, completionHandler: @escaping (() throws -> SearchBarsAndPubsResponse) -> Void) {
-        
-    }
-    
-    func fetchBarsAndPubs(category: Categories, sort: SortBy, order: SortOrder, completionHandler: @escaping (() throws -> SearchBarsAndPubsResponse) -> Void) {
-        
-    }
-    
+
     // MARK: - Managed object contexts
     
     var mainManagedObjectContext: NSManagedObjectContext
@@ -67,20 +56,18 @@ class BarsAndPubsCoreDataStore: ListBarsAndPubsStoreProtocol {
         }
     }
     
-    
     // MARK: - CRUD operations - Inner closure
     
-    func fetchBarsAndPubs(completionHandler: @escaping (() throws -> [BarOrPub]) -> Void) {
-//        privateManagedObjectContext.perform {
-//            do {
-//                let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ManagedOrder")
-//                let results = try self.privateManagedObjectContext.fetch(fetchRequest) as! [ManagedOrder]
-//                let orders = results.map { $0.toOrder() }
-//                completionHandler { return orders }
-//            } catch {
-//                completionHandler { throw BarsAndPubsStoreError.CannotFetch("Cannot fetch orders") }
-//            }
-//        }
+    func fetchBarsAndPubs(category: Categories, sort: SortBy, order: SortOrder, count: Int, startAt: Int, completionHandler: @escaping (() throws -> SearchBarsAndPubsResponse) -> Void) {
+        privateManagedObjectContext.perform {
+            do {
+                let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ManagedBarOrPub")
+                let results = try self.privateManagedObjectContext.fetch(fetchRequest) as! [ManagedBarOrPub]
+                let barsAndPubs = results.map { ["restaurant" : $0.toBarOrPub()] }
+                completionHandler { return SearchBarsAndPubsResponse(resultsFound: 0, resultsStart: startAt, resultsShown: count, barsAndPubsArrayOfDictionaries: barsAndPubs) }
+            } catch {
+                completionHandler { throw ListBarsAndPubsStoreError.CannotFetch("Can not fetch bars and pubs") }
+            }
+        }
     }
-    
 }

@@ -14,4 +14,9 @@ class ListBarsAndPubsCell: UITableViewCell {
     @IBOutlet weak var costForTwo: UILabel!
     @IBOutlet weak var thumbImageView: UIImageView!
     @IBOutlet weak var stars: HCSStarRatingView!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        thumbImageView.image = nil
+    }
 }

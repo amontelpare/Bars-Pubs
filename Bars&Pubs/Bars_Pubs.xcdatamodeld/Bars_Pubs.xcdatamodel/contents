@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="19A558d" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ManagedBarOrPub" representedClassName=".ManagedBarOrPub" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="aggregateRating" attributeType="String" syncable="YES"/>
+        <attribute name="averageCostForTwo" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cuisines" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="ratingText" attributeType="String" syncable="YES"/>
+        <attribute name="thumb" attributeType="String" syncable="YES"/>
+        <attribute name="timings" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ManagedBarOrPub" positionX="-63" positionY="-18" width="128" height="178"/>
+    </elements>
 </model>

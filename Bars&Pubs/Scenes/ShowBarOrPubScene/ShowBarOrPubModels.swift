@@ -14,7 +14,6 @@ enum ShowBarOrPub {
     // MARK: Use cases
   
     enum ShowMap {
-        
         struct Response {
             let barOrPub: BarOrPub
         }
@@ -31,7 +30,6 @@ enum ShowBarOrPub {
     }
     
     enum ShowDetails {
-        
         struct Response {
             let barOrPub: BarOrPub
         }
@@ -45,5 +43,4 @@ enum ShowBarOrPub {
             let displayedBarOrPub: DisplayedBarOrPub
         }
     }
-
 }

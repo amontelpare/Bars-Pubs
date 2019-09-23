@@ -10,6 +10,7 @@ import UIKit
 
 protocol ShowBarOrPubBusinessLogic {
     func showMap()
+    func showDetails()
 }
 
 protocol ShowBarOrPubDataStore {
@@ -26,5 +27,12 @@ class ShowBarOrPubInteractor: ShowBarOrPubBusinessLogic, ShowBarOrPubDataStore {
     func showMap() {
         let response = ShowBarOrPub.ShowMap.Response(barOrPub: barOrPub)
         presenter?.presentMap(response: response)
+    }
+
+    // MARK: Show details
+    
+    func showDetails() {
+        let response = ShowBarOrPub.ShowDetails.Response(barOrPub: barOrPub)
+        presenter?.presentDetails(response: response)
     }
 }

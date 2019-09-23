@@ -11,7 +11,6 @@ import XCTest
 
 class ListBarsAndPubsInteractorTests: XCTestCase {
     // MARK: Subject under test
-  
     var sut: ListBarsAndPubsInteractor!
   
     // MARK: Test lifecycle
@@ -33,26 +32,42 @@ class ListBarsAndPubsInteractorTests: XCTestCase {
   
     // MARK: Test doubles
   
-//    class ListBarsAndPubsPresentationLogicSpy: ListBarsAndPubsPresentationLogic {
-//        var presentSomethingCalled = false
-//    
-//        func presentSomething(response: ListBarsAndPubs.Something.Response) {
-//            presentSomethingCalled = true
-//        }
-//    }
-//  
-//    // MARK: Tests
-//  
-//    func testDoSomething() {
-//        // Given
-//        let spy = ListBarsAndPubsPresentationLogicSpy()
-//        sut.presenter = spy
-//        let request = ListBarsAndPubs.Something.Request()
-//    
-//        // When
-//        sut.doSomething(request: request)
-//    
-//        // Then
-//        XCTAssertTrue(spy.presentSomethingCalled, "doSomething(request:) should ask the presenter to format the result")
-//    }
+    class ListBarsAndPubsPresentationLogicSpy: ListBarsAndPubsPresentationLogic {
+        var presentBarsAndPubsCalled = false
+    
+        func presentBarsAndPubs(response: ListBarsAndPubs.List.Response) {
+            presentBarsAndPubsCalled = true
+        }
+    }
+  
+    class ListBarsAndPubsWorkerSpy: ListBarsAndPubsWorker {
+        // MARK: Method call expectations
+        
+        var fetchBarsAndPubsCalled = false
+        
+        // MARK: Spied methods
+        
+        override func fetchBarsAndPubs(category: Categories = .barsAndPubs, sort: SortBy = .rating, order: SortOrder = .desc, count: Int = 15, startAt: Int, completionHandler: @escaping (() throws -> SearchBarsAndPubsResponse) -> Void) {
+            fetchBarsAndPubsCalled = true
+            completionHandler{ return SearchBarsAndPubsResponse(resultsFound: 0, resultsStart: 0, resultsShown: 0, barsAndPubsArrayOfDictionaries: []) }
+        }
+    }
+
+    // MARK: Tests
+  
+    func testListBarsAndPubs() {
+        // Given
+        let listBarsAndPubsPresentationLogicSpy = ListBarsAndPubsPresentationLogicSpy()
+        sut.presenter = listBarsAndPubsPresentationLogicSpy
+        let listBarsAndPubsWorkerSpy = ListBarsAndPubsWorkerSpy()
+        sut.worker = listBarsAndPubsWorkerSpy
+
+        // When
+        sut.listBarsAndPubs()
+    
+        // Then
+        XCTAssert(listBarsAndPubsWorkerSpy.fetchBarsAndPubsCalled, "FetchBarsAndPubs() should ask worker to fetch bars and pubs")
+        XCTAssert(listBarsAndPubsPresentationLogicSpy.presentBarsAndPubsCalled, "FetchBarsAndPubs() should ask presenter to format bars and pubs result")
+    }
 }
+
