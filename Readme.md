@@ -1,6 +1,6 @@
 # Bars&Pubs
 
-Aplicación para test de proceso de selección de la empresa Rappi.
+Code example.
 
 ## Contenido
 
@@ -8,7 +8,7 @@ Aplicación para test de proceso de selección de la empresa Rappi.
 [![Ver video](app.gif)](https://youtu.be/IeqmN3iBZ34)
 
 * [Requerimientos](#requerimientos)
-* [Integrar](#instalar)
+* [Instalar dependencias](#instalar)
 	* [CocoaPods](#cocoapods)
 * [Consideraciones](#consideraciones)
    * [API](#api)
@@ -22,7 +22,7 @@ Aplicación para test de proceso de selección de la empresa Rappi.
 * iOS 12.4+
 * [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) 1.7.1+
 
-## <a name="instalar"></a> Instalar
+## <a name="instalar"></a> Instalar dependencias
 
 ### <a name="cocoapods"></a> CocoaPods
 
