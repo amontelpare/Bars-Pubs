@@ -1,6 +1,6 @@
 //
 //  RatingWorkerTests.swift
-//  Bars&PubsTests
+//  BestNYCBarsTests
 //
 //  Created by Andrés Montelpare on 22/09/2019.
 //  Copyright © 2019 Andrés Montelpare. All rights reserved.

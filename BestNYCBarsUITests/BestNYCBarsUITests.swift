@@ -27,8 +27,24 @@ class BestNYCBarsUITests: XCTestCase {
     }
 
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        let table = app.tables.element(boundBy: 0)
+        let lastCell = table.cells.element(boundBy: table.cells.count-1)
+        print(".---------------------------------------------------------------------------------------------------------------------", table.cells.count)
+//        table.scrollTo(element: lastCell)
     }
 
+}
+
+extension XCUIElement {
+    func scrollTo(element: XCUIElement) {
+        while !element.visible() {
+            swipeUp()
+        }
+    }
+    
+    func visible() -> Bool {
+        guard self.exists && !self.frame.isEmpty else { return false }
+        return XCUIApplication().windows.element(boundBy: 0).frame.contains(self.frame)
+    }
 }

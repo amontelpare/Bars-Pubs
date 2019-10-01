@@ -1,6 +1,6 @@
 //
 //  ParametersAPI.swift
-//  Bars&Pubs
+//  BestNYCBars
 //
 //  Created by Andrés Montelpare on 22/09/2019.
 //  Copyright © 2019 Andrés Montelpare. All rights reserved.
@@ -9,7 +9,7 @@
 import Foundation
 
 enum Categories: String {
-    case barsAndPubs = "11"
+    case bars = "11"
 }
 
 enum SortBy: String {

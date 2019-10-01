@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Bars&Pubs
+//  BestNYCBars
 //
 //  Created by Andrés Montelpare on 21/09/2019.
 //  Copyright © 2019 Andrés Montelpare. All rights reserved.
