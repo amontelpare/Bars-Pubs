@@ -73,6 +73,7 @@ class ListBarsAndPubsViewController: UIViewController, ListBarsAndPubsDisplayLog
   
     func displayBarsAndPubs(viewModel: ListBarsAndPubs.List.ViewModel) {
         if viewModel.success {
+            guard viewModel.displayedBarsOrPubs.count > 0 else { return }
             activityIndicatorView?.stopAnimating()
             displayedBarsOrPubs += viewModel.displayedBarsOrPubs
             self.tableView.reloadData()
