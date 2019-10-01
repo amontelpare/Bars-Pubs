@@ -10,9 +10,6 @@ Code example.
 * [Requirements](#requirements)
 * [Install dependencies](#install)
 * [Architecture](#architecture)
-   * [API](#api)
-   * [iOS](#ios)
-   * [Metodología](#metodologia)
 
 ## <a name="requirements"></a> Requirements
 
