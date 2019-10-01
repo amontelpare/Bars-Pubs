@@ -19,7 +19,7 @@ class BarsAndPubsCoreDataStore: ListBarsAndPubsStoreProtocol {
     
     init() {
         // This resource is the same name as your xcdatamodeld contained in your project.
-        guard let modelURL = Bundle.main.url(forResource: "Bars_Pubs", withExtension: "momd") else {
+        guard let modelURL = Bundle.main.url(forResource: "BestNYCBars", withExtension: "momd") else {
             fatalError("Error loading model from bundle")
         }
         
@@ -37,7 +37,7 @@ class BarsAndPubsCoreDataStore: ListBarsAndPubsStoreProtocol {
         /* The directory the application uses to store the Core Data store file.
          This code uses a file named "DataModel.sqlite" in the application's documents directory.
          */
-        let storeURL = docURL.appendingPathComponent("Bars_Pubs.sqlite")
+        let storeURL = docURL.appendingPathComponent("BestNYCBars.sqlite")
         do {
             try psc.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: nil)
         } catch {

@@ -6,7 +6,7 @@
 //  Copyright (c) 2019 Andrés Montelpare. All rights reserved.
 //
 
-@testable import Bars_Pubs
+@testable import BestNYCBars
 import XCTest
 
 class ShowBarOrPubInteractorTests: XCTestCase {
