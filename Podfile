@@ -7,11 +7,7 @@ def pods
     pod 'HCSStarRatingView', '~> 1.5'
 end
 
-target 'Bars&Pubs' do
+target 'BestNYCBars' do
 	pods
-end
-
-target 'Bars&PubsTests' do
-
 end
 

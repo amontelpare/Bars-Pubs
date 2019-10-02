@@ -1,4 +1,4 @@
-# Bars&Pubs
+# Best New York City bars
 
 Code example.
 
