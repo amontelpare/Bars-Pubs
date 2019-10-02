@@ -2,6 +2,7 @@
 
 * `1.0`
 	* [1.0.0](#1.0.0)
+	* [1.0.1](#1.0.1)
 
 ## <a name="1.0.0"></a> 1.0.0
 
@@ -10,3 +11,8 @@
 * "List bars and pubs Scene Tests".
 * "Show bar or pub Scene Tests"
 
+## <a name="1.0.1"></a> 1.0.1
+
+* Rename from Bars&Pubs to BestNYCBars. 
+* Add UITests target.
+* Update Readme to avoid reference to any company.
