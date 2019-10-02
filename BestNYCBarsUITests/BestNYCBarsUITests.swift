@@ -27,13 +27,7 @@ class BestNYCBarsUITests: XCTestCase {
     }
 
     func testExample() {
-        let app = XCUIApplication()
-        let table = app.tables.element(boundBy: 0)
-        let lastCell = table.cells.element(boundBy: table.cells.count-1)
-        print(".---------------------------------------------------------------------------------------------------------------------", table.cells.count)
-//        table.scrollTo(element: lastCell)
     }
-
 }
 
 extension XCUIElement {
