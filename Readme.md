@@ -30,4 +30,4 @@ The app was developed using [Clean swift](https://clean-swift.com/), which is ba
 
 It uses a unidirectional VIP cycle.
 
-[![VIP](https://hackernoon.com/hn-images/1*QV4nxWPd_sbGhoWO-X7PfQ.png)]
+![VIP](https://hackernoon.com/hn-images/1*QV4nxWPd_sbGhoWO-X7PfQ.png)
