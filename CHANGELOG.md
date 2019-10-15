@@ -11,7 +11,6 @@
 * "List bars and pubs Scene Tests".
 * "Show bar or pub Scene Tests"
 
-
 ## <a name="1.0.1"></a> 1.0.1
 
 * Rename from Bars&Pubs to BestNYCBars.
