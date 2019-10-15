@@ -13,6 +13,7 @@
 
 ## <a name="1.0.1"></a> 1.0.1
 
-* Rename from Bars&Pubs to BestNYCBars. 
+* Rename from Bars&Pubs to BestNYCBars.
 * Add UITests target.
-* Update Readme to avoid reference to any company.
+* Update readme, to avoid references to any company.
+
