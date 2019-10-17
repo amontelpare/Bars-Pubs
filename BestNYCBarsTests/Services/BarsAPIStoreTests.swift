@@ -45,10 +45,10 @@ class BarsAPIStoreTests: XCTestCase {
             expect.fulfill()
         }
 
-        waitForExpectations(timeout: 5.0)
+        waitForExpectations(timeout: 6.0)
 
         // Then
-        XCTAssertEqual(fetchedBars.count, 15, "fetchBars() should return a list of bars ")
+        XCTAssertEqual(fetchedBars.count, 15, "fetchBars() should return a list of bars")
         XCTAssertNil(fetchBarsError, "fetchBars() should not return an error")
     }
 }

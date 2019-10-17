@@ -31,7 +31,7 @@ class ShowBarPresenter: ShowBarPresentationLogic {
     
     func presentDetails(response: ShowBar.ShowDetails.Response) {
         let bar = response.bar
-        let displayedBar = ShowBar.ShowDetails.ViewModel.DisplayedBar(timings: bar.timings, cuisines: bar.cuisines)
+        let displayedBar = ShowBar.ShowDetails.ViewModel.DisplayedBar(name: bar.name, timings: bar.timings, cuisines: bar.cuisines)
         let viewModel = ShowBar.ShowDetails.ViewModel(displayedBar: displayedBar)
         viewController?.displayDetails(viewModel: viewModel)
     }

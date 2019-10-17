@@ -11,7 +11,7 @@
 		8E73E0F223438A7600542E4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E73E0F123438A7600542E4A /* AppDelegate.swift */; };
 		8E73E0F723438A7600542E4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E73E0F523438A7600542E4A /* Main.storyboard */; };
 		8E73E0FF23438A7700542E4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E73E0FD23438A7700542E4A /* LaunchScreen.storyboard */; };
-		8E73E11523438A7700542E4A /* BestNYCBarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E73E11423438A7700542E4A /* BestNYCBarsUITests.swift */; };
+		8E73E11523438A7700542E4A /* ListBarsSceneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E73E11423438A7700542E4A /* ListBarsSceneUITests.swift */; };
 		8E73E13223438B0900542E4A /* RatingWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E73E12323438B0900542E4A /* RatingWorkerTests.swift */; };
 		8E73E13323438B0900542E4A /* Seeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E73E12623438B0900542E4A /* Seeds.swift */; };
 		8E73E13423438B0900542E4A /* ShowBarViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E73E12823438B0900542E4A /* ShowBarViewControllerTests.swift */; };
@@ -47,6 +47,10 @@
 		8E73E17D23438B2500542E4A /* RatingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E73E16023438B2500542E4A /* RatingWorker.swift */; };
 		8E73E18123438B3B00542E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E73E18023438B3B00542E4A /* Assets.xcassets */; };
 		8E73E1872343B5DF00542E4A /* BestNYCBars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E73E1852343B5DF00542E4A /* BestNYCBars.xcdatamodeld */; };
+		8E83BF7A235891AC006740DD /* XCUIElement+Scrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83BF79235891AC006740DD /* XCUIElement+Scrolling.swift */; };
+		8E83BF7D23589258006740DD /* UITestIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83BF7C23589258006740DD /* UITestIdentifiers.swift */; };
+		8E83BF7E2358925D006740DD /* UITestIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83BF7C23589258006740DD /* UITestIdentifiers.swift */; };
+		8E83BF812358B0B7006740DD /* ShowBarSceneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83BF802358B0B7006740DD /* ShowBarSceneUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +82,7 @@
 		8E73E10523438A7700542E4A /* BestNYCBarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestNYCBarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E73E10B23438A7700542E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E73E11023438A7700542E4A /* BestNYCBarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestNYCBarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E73E11423438A7700542E4A /* BestNYCBarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNYCBarsUITests.swift; sourceTree = "<group>"; };
+		8E73E11423438A7700542E4A /* ListBarsSceneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBarsSceneUITests.swift; sourceTree = "<group>"; };
 		8E73E11623438A7700542E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E73E12323438B0900542E4A /* RatingWorkerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingWorkerTests.swift; sourceTree = "<group>"; };
 		8E73E12623438B0900542E4A /* Seeds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seeds.swift; sourceTree = "<group>"; };
@@ -115,6 +119,9 @@
 		8E73E16023438B2500542E4A /* RatingWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingWorker.swift; sourceTree = "<group>"; };
 		8E73E18023438B3B00542E4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E73E1862343B5DF00542E4A /* Bars_Pubs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bars_Pubs.xcdatamodel; sourceTree = "<group>"; };
+		8E83BF79235891AC006740DD /* XCUIElement+Scrolling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Scrolling.swift"; sourceTree = "<group>"; };
+		8E83BF7C23589258006740DD /* UITestIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestIdentifiers.swift; sourceTree = "<group>"; };
+		8E83BF802358B0B7006740DD /* ShowBarSceneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBarSceneUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +212,9 @@
 		8E73E11323438A7700542E4A /* BestNYCBarsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8E73E11423438A7700542E4A /* BestNYCBarsUITests.swift */,
+				8E83BF7B235891B5006740DD /* Extensions */,
+				8E73E11423438A7700542E4A /* ListBarsSceneUITests.swift */,
+				8E83BF802358B0B7006740DD /* ShowBarSceneUITests.swift */,
 				8E73E11623438A7700542E4A /* Info.plist */,
 			);
 			path = BestNYCBarsUITests;
@@ -278,12 +287,12 @@
 		8E73E13D23438B2500542E4A /* ShowBarScene */ = {
 			isa = PBXGroup;
 			children = (
+				8E73E14323438B2500542E4A /* ShowBarViewController.swift */,
 				8E73E13E23438B2500542E4A /* ShowBarInteractor.swift */,
 				8E73E13F23438B2500542E4A /* ShowBarPresenter.swift */,
 				8E73E14023438B2500542E4A /* ShowBarWorker.swift */,
 				8E73E14123438B2500542E4A /* ShowBarRouter.swift */,
 				8E73E14223438B2500542E4A /* ShowBarModels.swift */,
-				8E73E14323438B2500542E4A /* ShowBarViewController.swift */,
 			);
 			path = ShowBarScene;
 			sourceTree = "<group>";
@@ -326,6 +335,7 @@
 				8E73E15423438B2500542E4A /* Bar */,
 				8E73E15723438B2500542E4A /* SearchBarsResponse */,
 				8E73E15923438B2500542E4A /* BarRating */,
+				8E83BF7F23589D13006740DD /* UITest */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -386,6 +396,22 @@
 				8E73E16023438B2500542E4A /* RatingWorker.swift */,
 			);
 			path = Workers;
+			sourceTree = "<group>";
+		};
+		8E83BF7B235891B5006740DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E83BF79235891AC006740DD /* XCUIElement+Scrolling.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8E83BF7F23589D13006740DD /* UITest */ = {
+			isa = PBXGroup;
+			children = (
+				8E83BF7C23589258006740DD /* UITestIdentifiers.swift */,
+			);
+			path = UITest;
 			sourceTree = "<group>";
 		};
 		E77A0296FB1480C3BB4ED1CD /* Pods */ = {
@@ -595,6 +621,7 @@
 				8E73E17923438B2500542E4A /* BarRating.swift in Sources */,
 				8E73E17123438B2500542E4A /* ListBarsRouter.swift in Sources */,
 				8E73E17B23438B2500542E4A /* BarsCoreDataStore.swift in Sources */,
+				8E83BF7E2358925D006740DD /* UITestIdentifiers.swift in Sources */,
 				8E73E1872343B5DF00542E4A /* BestNYCBars.xcdatamodeld in Sources */,
 				8E73E16623438B2500542E4A /* ShowBarInteractor.swift in Sources */,
 			);
@@ -621,7 +648,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E73E11523438A7700542E4A /* BestNYCBarsUITests.swift in Sources */,
+				8E73E11523438A7700542E4A /* ListBarsSceneUITests.swift in Sources */,
+				8E83BF812358B0B7006740DD /* ShowBarSceneUITests.swift in Sources */,
+				8E83BF7D23589258006740DD /* UITestIdentifiers.swift in Sources */,
+				8E83BF7A235891AC006740DD /* XCUIElement+Scrolling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

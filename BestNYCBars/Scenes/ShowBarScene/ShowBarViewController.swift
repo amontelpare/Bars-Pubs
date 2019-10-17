@@ -80,7 +80,7 @@ class ShowBarViewController: UIViewController, ShowBarDisplayLogic {
         addAnotation(clLocation: clLocation, name: displayedBar.name)
     }
     
-    // Show details
+    // MARK: Show details
     
     @IBOutlet weak var cuisines: UILabel!
     @IBOutlet weak var timings: UILabel!
@@ -92,6 +92,7 @@ class ShowBarViewController: UIViewController, ShowBarDisplayLogic {
     func displayDetails(viewModel: ShowBar.ShowDetails.ViewModel) {
         cuisines.text = viewModel.displayedBar.cuisines
         timings.text = viewModel.displayedBar.timings
+        title = viewModel.displayedBar.name
     }
     
     // MARK: Private methods
