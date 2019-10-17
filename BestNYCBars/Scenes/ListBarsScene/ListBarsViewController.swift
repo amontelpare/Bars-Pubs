@@ -105,6 +105,7 @@ extension ListBarsViewController: UITableViewDataSource {
         cell.name.text = displayedBar.name
         cell.costForTwo.text = displayedBar.costForTwo
         cell.stars.value = displayedBar.rating
+        cell.accessibilityIdentifier = String(format:UITestKeys.barTableViewCell.rawValue, indexPath.row)
         
         return cell
     }

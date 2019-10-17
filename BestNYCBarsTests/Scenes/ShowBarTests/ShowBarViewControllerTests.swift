@@ -100,7 +100,7 @@ class ShowBarViewControllerTests: XCTestCase {
         // Given
         let spy = ShowBarBusinessLogicSpy()
         sut.interactor = spy
-        let viewModel = ShowBar.ShowDetails.ViewModel(displayedBar: ShowBar.ShowDetails.ViewModel.DisplayedBar(timings: "Timings", cuisines: "Cuisines"))
+        let viewModel = ShowBar.ShowDetails.ViewModel(displayedBar: ShowBar.ShowDetails.ViewModel.DisplayedBar(name: "Bar name", timings: "Timings", cuisines: "Cuisines"))
         
         // When
         loadView()
@@ -109,5 +109,6 @@ class ShowBarViewControllerTests: XCTestCase {
         // Then
         XCTAssertEqual(sut.timings.text, "Timings", "displayDetails(viewModel:) should update the timings label")
         XCTAssertEqual(sut.cuisines.text, "Cuisines", "displayDetails(viewModel:) should update the cuisines label")
+        XCTAssertEqual(sut.title, "Bar name", "displayDetails(viewModel:) should update the title label")
     }
 }

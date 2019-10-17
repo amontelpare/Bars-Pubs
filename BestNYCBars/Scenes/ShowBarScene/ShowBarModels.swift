@@ -36,6 +36,7 @@ enum ShowBar {
         
         struct ViewModel {
             struct DisplayedBar {
+                let name: String
                 let timings: String
                 let cuisines: String
             }
