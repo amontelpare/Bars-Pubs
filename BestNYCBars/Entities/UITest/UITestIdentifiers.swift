@@ -8,8 +8,9 @@
 
 import Foundation
 
- enum UITest: String {
+ enum UITestKeys: String {
     case barTableViewCell = "barTableViewCell-%d"
     case barsTableViewLoading = "barsTableViewLoading"
     case barsTableView = "barsTableView"
+    case barMapAnnotation = "barMapAnnotation"
 }

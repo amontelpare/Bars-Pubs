@@ -11,8 +11,7 @@ import XCTest
 
 class ListBarsSceneUITests: XCTestCase {
     let app = XCUIApplication()
-    lazy var tableView = app.tables[UITest.barsTableView.rawValue]
-
+    lazy var tableView = app.tables[UITestKeys.barsTableView.rawValue]
 
     override func setUp() {
         continueAfterFailure = false
@@ -20,7 +19,7 @@ class ListBarsSceneUITests: XCTestCase {
     }
 
     func testLoadingIsShown() {
-        let activityIndicator = app.otherElements.containing(.activityIndicator, identifier: UITest.barsTableViewLoading.rawValue).element
+        let activityIndicator = app.otherElements.containing(.activityIndicator, identifier: UITestKeys.barsTableViewLoading.rawValue).element
         
         XCTAssertTrue(activityIndicator.exists, "Loading was not shown")
     }
@@ -32,9 +31,9 @@ class ListBarsSceneUITests: XCTestCase {
     }
     
     func testLoadingMoreWhenScrollToBottom() {
-        waitWhileFirstCellsAreLoading()
+        waitWhileFirstCellsAreLoading(tableView: tableView)
         let tableViewElementsCount = tableView.cells.count
-        let lastCellIdentifier = String(format:UITest.barTableViewCell.rawValue, (tableViewElementsCount - 1))
+        let lastCellIdentifier = String(format:UITestKeys.barTableViewCell.rawValue, (tableViewElementsCount - 1))
         let lastCell = tableView.cells[lastCellIdentifier]
         tableView.scrollTo(element: lastCell)
         let tableViewElementsNewCount = tableView.cells.count
@@ -43,7 +42,7 @@ class ListBarsSceneUITests: XCTestCase {
     }
     
     func testTableViewIteraction() {
-        waitWhileFirstCellsAreLoading()
+        waitWhileFirstCellsAreLoading(tableView: tableView)
         let cells = tableView.cells
         
         if cells.count > 0 {
@@ -65,14 +64,6 @@ class ListBarsSceneUITests: XCTestCase {
         } else {
             XCTAssert(false, "Was not able to find any table cells")
         }
-    }
-    
-    // Mark: Private
-    
-    private func waitWhileFirstCellsAreLoading() {
-        let predicate = NSPredicate(format: "cells.count > 0")
-        let firstLoadExpectation = expectation(for: predicate, evaluatedWith: tableView)
-        wait(for: [firstLoadExpectation], timeout: 6)
     }
 }
 

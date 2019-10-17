@@ -50,6 +50,7 @@
 		8E83BF7A235891AC006740DD /* XCUIElement+Scrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83BF79235891AC006740DD /* XCUIElement+Scrolling.swift */; };
 		8E83BF7D23589258006740DD /* UITestIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83BF7C23589258006740DD /* UITestIdentifiers.swift */; };
 		8E83BF7E2358925D006740DD /* UITestIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83BF7C23589258006740DD /* UITestIdentifiers.swift */; };
+		8E83BF812358B0B7006740DD /* ShowBarSceneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E83BF802358B0B7006740DD /* ShowBarSceneUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		8E73E1862343B5DF00542E4A /* Bars_Pubs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bars_Pubs.xcdatamodel; sourceTree = "<group>"; };
 		8E83BF79235891AC006740DD /* XCUIElement+Scrolling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Scrolling.swift"; sourceTree = "<group>"; };
 		8E83BF7C23589258006740DD /* UITestIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestIdentifiers.swift; sourceTree = "<group>"; };
+		8E83BF802358B0B7006740DD /* ShowBarSceneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBarSceneUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			children = (
 				8E83BF7B235891B5006740DD /* Extensions */,
 				8E73E11423438A7700542E4A /* ListBarsSceneUITests.swift */,
+				8E83BF802358B0B7006740DD /* ShowBarSceneUITests.swift */,
 				8E73E11623438A7700542E4A /* Info.plist */,
 			);
 			path = BestNYCBarsUITests;
@@ -646,6 +649,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E73E11523438A7700542E4A /* ListBarsSceneUITests.swift in Sources */,
+				8E83BF812358B0B7006740DD /* ShowBarSceneUITests.swift in Sources */,
 				8E83BF7D23589258006740DD /* UITestIdentifiers.swift in Sources */,
 				8E83BF7A235891AC006740DD /* XCUIElement+Scrolling.swift in Sources */,
 			);

@@ -20,3 +20,11 @@ extension XCUIElement {
         return XCUIApplication().windows.element(boundBy: 0).frame.contains(self.frame)
     }
 }
+
+extension XCTestCase {
+    func waitWhileFirstCellsAreLoading(tableView: Any) {
+        let predicate = NSPredicate(format: "cells.count > 0")
+        let firstLoadExpectation = expectation(for: predicate, evaluatedWith: tableView)
+        wait(for: [firstLoadExpectation], timeout: 6)
+    }
+}
